@@ -7,7 +7,7 @@ use Livewire\Component;
 
 class Items extends Component
 {
-    protected $listeners = ["poop"];
+    protected $listeners = ["poop","item_completed"];
 
     public Checklist $checklist;
 
@@ -18,6 +18,10 @@ class Items extends Component
 
     public function poop(Checklist $checklist){
         $this->checklist = $checklist;
+    }
+
+    public function item_completed(int $id , bool $value){
+        error_log($id . ': ' . $value ?: 0);
     }
 
 }

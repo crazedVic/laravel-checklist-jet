@@ -17,8 +17,8 @@ class CreateChecklistItemsTable extends Migration
             $table->id();
             $table->unsignedBigInteger('checklist_id'); //which checklist this item belongs to
             $table->unsignedBigInteger('parent_item_id')->nullable(); //which checklist this item belongs to
-            $table->enum("required_parent_status",["Completed","Active"])->nullable();
-            $table->enum("activated_parent_status", ["Completed","Active"])->nullable();
+            $table->enum("activated_parent_status",["Completed","Active"])->nullable();
+            $table->boolean("required")->default(false);
             $table->string("category")->nullable(); //more or less a tag
             $table->text("description");
             $table->integer("sort_order")->default(0);
