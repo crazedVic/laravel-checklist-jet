@@ -16,7 +16,13 @@ class ProcessSeeder extends Seeder
     {
         DB::table('processes')->insert([
             'id' => 1,
-            'name' => "Deals",
+            'name' => "Process One",
+            'description' => 'The process surrounding the completion of a deal.'
+        ]);
+
+        DB::table('processes')->insert([
+            'id' => 2,
+            'name' => "Process Two",
             'description' => 'The process surrounding the completion of a deal.'
         ]);
     }
