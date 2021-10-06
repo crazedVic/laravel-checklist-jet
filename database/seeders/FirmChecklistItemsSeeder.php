@@ -17,278 +17,127 @@ class FirmChecklistItemsSeeder extends Seeder
 
         // items related to the parent-children dependency testing
         DB::table('firm_checklist_items')->insert([
+            'id' => 1,
             'firm_checklist_id' => 3,
-            'checklist_item_id' => 1,
             "status" => "Active",
-            'description' => "Firm Task 1A"
+            'description' => "Task 1 - NDA Completed"
         ]);
 
         DB::table('firm_checklist_items')->insert([
+            'id' => 2,
             'firm_checklist_id' => 3,
-            'checklist_item_id' => 2,
+            'firm_parent_item_id' => 1,
+            'activated_parent_status' => 'Completed',
             "status" => "Active",
-            'description' => "Firm Task 1B"
+            'description' => "Task 2 - LOI Completed - Dep on Task 1 Completed "
         ]);
+
         DB::table('firm_checklist_items')->insert([
+            'id' => 3,
             'firm_checklist_id' => 3,
-            'checklist_item_id' => 3,
+            'firm_parent_item_id' => 1,
+            'activated_parent_status' => 'Active',
             "status" => "Active",
-            'description' => "Firm Task 1C"
+            'description' => "Task 1A - Draft NDA Supplement Uploaded - Dep on Task 1 Active, Optional"
         ]);
+
         DB::table('firm_checklist_items')->insert([
+            'id' => 4,
             'firm_checklist_id' => 3,
-            'checklist_item_id' => 4,
+            'firm_parent_item_id' => 3,
+            'activated_parent_status' => 'Completed',
+            'required' => true,
             "status" => "Active",
-            'description' => "Firm Task 1D"
+            'description' => "Task 1B - Vendor Accept NDA Supplement - dep on Task 1A Completed, Required if Task 1A Completed"
         ]);
+
         DB::table('firm_checklist_items')->insert([
+            'id' => 11,
             'firm_checklist_id' => 3,
-            'checklist_item_id' => 5,
+            'firm_parent_item_id' => 3,
+            'activated_parent_status' => 'Completed',
+            'required' => true,
             "status" => "Pending",
-            'description' => "Firm Task 2A"
+            'description' => "Task 1E - Buyer Accept NDA Supplement - dep on Task 1A Completed, Required if Task 1A Completed"
         ]);
+
         DB::table('firm_checklist_items')->insert([
+            'id' => 5,
             'firm_checklist_id' => 3,
-            'checklist_item_id' => 6,
+            'firm_parent_item_id' => 1,
+            'activated_parent_status' => 'Active',
             "status" => "Pending",
-            'description' => "Firm Task 3A"
+            'description' => "Task 1C - dep on Task 1 active - Optional"
         ]);
+
         DB::table('firm_checklist_items')->insert([
+            'id' => 6,
             'firm_checklist_id' => 3,
-            'checklist_item_id' => 7,
+            'firm_parent_item_id' => 1,
+            'activated_parent_status' => 'Active',
+            'required' => true,
             "status" => "Pending",
-            'description' => "Firm Task 3B"
+            'description' => "Task 1D - Legal NDA - dep on Task 1 active - Required for Parent to be Completed"
         ]);
+
         DB::table('firm_checklist_items')->insert([
+            'id' => 7,
             'firm_checklist_id' => 3,
-            'checklist_item_id' => 8,
+            'firm_parent_item_id' => 1,
+            'activated_parent_status' => 'Completed',
+            'required' => true,
             "status" => "Pending",
-            'description' => "Firm Task 3C"
-        ]);
-
-
-        // regular seeded data
-        DB::table('firm_checklist_items')->insert([
-           'firm_checklist_id' => 1,
-            'checklist_item_id' => 9,
-            'category' => "Legal",
-            "status" => "Completed",
-            'description' => "Organizational chart of the company indicating the direct and indirect holding of the shares in the share capital of the company.",
-            'created_at' => now(),
-            'updated_at' => now(),
+            'description' => "Task 3 - dep on Task 1 Completed"
         ]);
 
         DB::table('firm_checklist_items')->insert([
-           'firm_checklist_id' => 1,
-            'checklist_item_id' => 10,
-            'category' => "Legal",
-            'description' => "Minute Book (including any written resolution in lieu of meeting) and other corporate records, as well as the statutes and By-Laws of the company, including any amendment to the statutes and By-Laws.",
-            'created_at' => now(),
-            'updated_at' => now(),
+            'id' => 8,
+            'firm_checklist_id' => 3,
+            'firm_parent_item_id' => 4,
+            'activated_parent_status' => 'Active',
+            'required' => true,
+            "status" => "Pending",
+            'description' => "Task 1B1 - NDA Supplement Esignature - dep on Task 1B Active and required if 1B is Completed"
         ]);
 
         DB::table('firm_checklist_items')->insert([
-           'firm_checklist_id' => 1,
-            'checklist_item_id' => 11,
-            'category' => "Legal",
-            "status" => "Completed",
-            'description' => "Any agreement between the shareholders of the company including any amendment to the latter.",
-            'created_at' => now(),
-            'updated_at' => now(),
+            'id' => 13,
+            'firm_checklist_id' => 3,
+            'firm_parent_item_id' => 4,
+            'activated_parent_status' => 'Active',
+            "status" => "Pending",
+            'description' => "Task 1B2- NDA Supplement Notes- dep on Task 1B Active and optional"
         ]);
 
         DB::table('firm_checklist_items')->insert([
-           'firm_checklist_id' => 1,
-            'checklist_item_id' => 12,
-            'category' => "Legal",
-            'description' => "List of outstanding options or other rights to purchase shares in the company.",
-            'created_at' => now(),
-            'updated_at' => now(),
+            'id' => 12,
+            'firm_checklist_id' => 3,
+            'firm_parent_item_id' => 11,
+            'activated_parent_status' => 'Active',
+            'required' => true,
+            "status" => "Pending",
+            'description' => "Task 1E1 - NDA Supplement Esignature - dep on Task 1B Active and required if 1E is Completed"
         ]);
 
         DB::table('firm_checklist_items')->insert([
-           'firm_checklist_id' => 1,
-            'checklist_item_id' => 13,
-            'category' => "Legal",
-            'description' => "List of trade names of the company.",
-            'created_at' => now(),
-            'updated_at' => now(),
+            'id' => 9,
+            'firm_checklist_id' => 3,
+            'firm_parent_item_id' => 7,
+            'activated_parent_status' => 'Active',
+            'required' => true,
+            "status" => "Pending",
+            'description' => "Task 3A - dep on Task 3 Active"
         ]);
 
         DB::table('firm_checklist_items')->insert([
-           'firm_checklist_id' => 1,
-            'checklist_item_id' => 14,
-            'category' => "Legal",
-            'description' => "List and addresses of the company’s firm places.",
-            'created_at' => now(),
-            'updated_at' => now(),
+            'id' => 10,
+            'firm_checklist_id' => 3,
+            'firm_parent_item_id' => 7,
+            'activated_parent_status' => 'Active',
+            'required' => true,
+            "status" => "Pending",
+            'description' => "Task 3B - dep on Task 3 active"
         ]);
 
-        DB::table('firm_checklist_items')->insert([
-           'firm_checklist_id' => 1,
-            'checklist_item_id' => 14,
-            'category' => "Legal",
-            "status" => "Completed",
-            'description' => "List of the company’s subsidiaries.",
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
-
-        DB::table('firm_checklist_items')->insert([
-           'firm_checklist_id' => 1,
-            'checklist_item_id' => 15,
-            'category' => "Legal",
-            'description' => "Copy of any notice of default received by the company or by one of its subsidiaries from any authority relatively to their respective activities.
-",
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
-
-        DB::table('firm_checklist_items')->insert([
-           'firm_checklist_id' => 1,
-            'checklist_item_id' => 16,
-            'category' => "Legal",
-            'description' => "Licenses, authorizations and permits required by public authorities (including municipal) for the operation of the company’ firm.",
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
-
-        DB::table('firm_checklist_items')->insert([
-           'firm_checklist_id' => 1,
-            'checklist_item_id' => 17,
-            'category' => "Legal",
-            "status" => "Completed",
-            'description' => "Accreditation certificates, if applicable.",
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
-
-        DB::table('firm_checklist_items')->insert([
-           'firm_checklist_id' => 1,
-            'checklist_item_id' => 18,
-            'category' => "Legal",
-            'description' => "Firm licences, regulatory approvals or registrations, if applicable.",
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
-
-        DB::table('firm_checklist_items')->insert([
-           'firm_checklist_id' => 1,
-            'checklist_item_id' => 19,
-            'category' => "Legal",
-            'description' => "Compliance certificates, if applicable.",
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
-
-        DB::table('firm_checklist_items')->insert([
-           'firm_checklist_id' => 1,
-            'checklist_item_id' => 20,
-            'category' => "Intellectual Property",
-            "status" => "Completed",
-            'description' => "Documents relating to patents, license agreements, copyrights, trade-marks, industrial designs, processes secrets, know-how and other intellectual property rights owned or used by the company.",
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
-
-        DB::table('firm_checklist_items')->insert([
-           'firm_checklist_id' => 1,
-            'checklist_item_id' => 21,
-            'category' => "Intellectual Property",
-            "status" => "Completed",
-            'description' => "Description of any action, claim or other proceeding of any nature pertaining to intellectual property owned or used by the company.",
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
-
-        DB::table('firm_checklist_items')->insert([
-           'firm_checklist_id' => 1,
-            'checklist_item_id' => 22,
-            'category' => "Intellectual Property",
-            "status" => "Completed",
-            'description' => "Written evidence to the effect that, in connection with technology attached to the firm plan, the company owns, free of any lien or other charge, all rights of intellectual property or, where appropriate, an exclusive license.",
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
-
-        DB::table('firm_checklist_items')->insert([
-           'firm_checklist_id' => 1,
-            'checklist_item_id' => 23,
-            'category' => "Intellectual Property",
-            'description' => "List of the escrow and or other private information that is specific to the companys intellectual properties",
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
-
-        DB::table('firm_checklist_items')->insert([
-           'firm_checklist_id' => 1,
-            'checklist_item_id' => 24,
-            'category' => "Material Contract Documentation",
-            'description' => "Agreements with third parties in relation to the realization of the firm plan.",
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
-
-        DB::table('firm_checklist_items')->insert([
-           'firm_checklist_id' => 1,
-            'checklist_item_id' => 25,
-            'category' => "Material Contract Documentation",
-            'description' => "Loan agreements, safety, security and other collateral agreements to the financing of the company (including, as appropriate, a list of liens and other charges affecting any property of the company).",
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
-
-        DB::table('firm_checklist_items')->insert([
-           'firm_checklist_id' => 1,
-            'checklist_item_id' => 26,
-            'category' => "Material Contract Documentation",
-            "status" => "Completed",
-            'description' => "Contracts with customers or suppliers signed and under negotiation.",
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
-
-        DB::table('firm_checklist_items')->insert([
-           'firm_checklist_id' => 1,
-            'checklist_item_id' => 27,
-            'category' => "Material Contract Documentation",
-            'description' => "Non-competition agreements or all other contracts restricting the rights of the company.",
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
-
-
-        DB::table('firm_checklist_items')->insert([
-            'firm_checklist_id' => 2,
-            'checklist_item_id' => 28,
-            'category' => "Finance",
-            'description' => "P&L Statement",
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
-        DB::table('firm_checklist_items')->insert([
-            'firm_checklist_id' => 2,
-            'checklist_item_id' => 29,
-            'category' => "Finance",
-            'description' => "Income Statement",
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
-        DB::table('firm_checklist_items')->insert([
-            'firm_checklist_id' => 2,
-            'checklist_item_id' => 30,
-            'category' => "Finance",
-            'description' => "Balance Sheet",
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
-        DB::table('firm_checklist_items')->insert([
-            'firm_checklist_id' => 2,
-            'checklist_item_id' => 31,
-            'category' => "Finance",
-            'description' => "General Ledger",
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
     }
 }

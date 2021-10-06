@@ -36,7 +36,6 @@ class ChecklistItemsSeeder extends Seeder
             'checklist_id' => 3,
             'parent_item_id' => 1,
             'activated_parent_status' => 'Active',
-//            'required_parent_status' => 'Active',
             'description' => "Task 1A - Draft NDA Supplement Uploaded - Dep on Task 1 Active, Optional"
         ]);
 
