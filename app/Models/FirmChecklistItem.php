@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class FirmChecklistItem extends Model
 {
@@ -17,9 +18,14 @@ class FirmChecklistItem extends Model
         return $this->belongsTo(FirmChecklist::class,'firm_checklist_id');
     }
 
-    public function checklistItem(): BelongsTo
+    public function parent(): BelongsTo
     {
-        return $this->belongsTo(ChecklistItem::class);
+        return $this->belongsTo(FirmChecklistItem::class,'firm_parent_item_id');
+    }
+
+    public function children(): HasMany
+    {
+        return $this->hasMany(FirmChecklistItem::class, 'firm_parent_item_id');
     }
 
     public function enable() :bool

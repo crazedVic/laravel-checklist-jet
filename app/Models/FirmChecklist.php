@@ -30,18 +30,8 @@ class FirmChecklist extends Model
         return $this->morphTo();
     }
 
-    public function notes(): MorphMany
+    public function process(): BelongsTo
     {
-        return $this->morphMany(Note::class, 'noteof');
-    }
-
-    public function activityLogs(): MorphMany
-    {
-        return $this->morphMany(ActivityLog::class, 'activityof')->orderByDesc('id');
-    }
-
-    public function documents(): MorphMany
-    {
-        return $this->morphMany(Document::class, 'documentof');
+        return $this->belongsTo(Process::class);
     }
 }

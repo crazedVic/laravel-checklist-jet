@@ -15,6 +15,9 @@ class Process extends Model
     public function checklists(): HasMany
     {
         return $this->hasMany(Checklist::class);
+    }
 
+    public function firmChecklists(): HasMany{
+        return $this->hasMany(FirmChecklist::class);
     }
 }
