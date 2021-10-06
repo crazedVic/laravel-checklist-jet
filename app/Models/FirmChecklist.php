@@ -15,6 +15,7 @@ class FirmChecklist extends Model
 
     protected $guarded = [];
 
+
     public function items(): HasMany
     {
         return $this->hasMany(FirmChecklistItem::class);

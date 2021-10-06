@@ -11,6 +11,16 @@
         </ol>
     @endforeach
     </ul>
+    <ul>
+        @foreach($processes as $process)
+            <li class="font-bold">{{ $process->name }}</li>
+            <ol class="ml-5">
+                @foreach($process->firmChecklists as $firmChecklist)
+                    <li><button wire:click="$emit('poopFirm',{{$firmChecklist}})">{{$firmChecklist->created_at  . ' - ' . $firmChecklist->name}}</button></li>
+                @endforeach
+            </ol>
+        @endforeach
+    </ul>
 </div>
 @push('scripts')
     <script type="text/javascript">

@@ -11,6 +11,7 @@ class Process extends Model
     use HasFactory;
 
     protected $guarded = [];
+    protected $with = ["firmChecklists","checklists"];
 
     public function checklists(): HasMany
     {
