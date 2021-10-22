@@ -14,8 +14,9 @@ class Process extends Component
     public function render()
     {
         $processes = \App\Models\Process::all();
+        $firmChecklists = \App\Models\FirmChecklist::doesntHave("process")->get();
         return view('livewire.process',
-        ["processes"=> $processes]);
+        ["processes"=> $processes, "firmChecklists" => $firmChecklists]);
     }
 
     public function generateProcess(\App\Models\Process $process){
