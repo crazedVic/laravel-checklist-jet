@@ -12,14 +12,12 @@ class Workflow extends Model
 
     protected $guarded = [];
 
-    protected $with = ["firmChecklists","checklists"];
+    // eager loading
+    protected $with = ["checklists"];
 
     public function checklists(): HasMany
     {
         return $this->hasMany(Checklist::class);
     }
 
-    public function firmChecklists(): HasMany{
-        return $this->hasMany(FirmChecklist::class);
-    }
 }

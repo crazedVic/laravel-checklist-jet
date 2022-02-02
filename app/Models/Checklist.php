@@ -23,13 +23,9 @@ class Checklist extends Model
         return $this->hasMany(FirmChecklist::class);
     }
 
-    public function activityLogs(): MorphMany
-    {
-        return $this->morphMany(ActivityLog::class, 'activityof')->orderByDesc('id');
-    }
 
-    public function documents(): MorphMany
-    {
-        return $this->morphMany(Document::class, 'documentof');
-    }
+//    public function documents(): MorphMany
+//    {
+//        return $this->morphMany(Document::class, 'documentof');
+//    }
 }

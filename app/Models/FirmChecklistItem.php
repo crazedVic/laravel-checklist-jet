@@ -16,21 +16,16 @@ class FirmChecklistItem extends Model
     {
         return $this->belongsTo(FirmChecklist::class,'firm_checklist_id');
     }
+//
+//    public function notes()
+//    {
+//        return $this->morphMany(Note::class, 'noteof');
+//    }
 
-    public function notes()
-    {
-        return $this->morphMany(Note::class, 'noteof');
-    }
-
-    public function activityLogs()
-    {
-        return $this->morphMany(ActivityLog::class, 'activityof')->orderByDesc('id');
-    }
-
-    public function documents()
-    {
-        return $this->morphMany(Document::class, 'documentof');
-    }
+//    public function documents()
+//    {
+//        return $this->morphMany(Document::class, 'documentof');
+//    }
 
     public function checklistItem()
     {

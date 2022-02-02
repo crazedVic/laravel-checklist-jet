@@ -1,9 +1,9 @@
 <div>
     <ul>
-    @foreach($$workflows as $$workflow)
-       <li class="font-bold">{{ $$workflow->name }}
+    @foreach($$workflows as $workflow)
+       <li class="font-bold">{{ $workflow->name }}
            <button wire:click="generateWorkflow({{$workflow}})" class="p-1 m-1 text-white bg-indigo-500">
-               Generate workflow</button></li>
+               Generate Workflow</button></li>
         <ol class="ml-5">
         @foreach($workflow->checklists as $checklist)
                 <li><button wire:click="$emit('poop',{{$checklist}})">{{$checklist->name}}</button>

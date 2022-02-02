@@ -22,20 +22,28 @@ class ChecklistItem extends Model
         return $this->belongsTo(Checklist::class);
     }
 
-    /**
-     * @return MorphMany
-     */
-    public function documents() : MorphMany{
-        return $this->morphMany(Document::class, 'documentof');
-    }
+
+//    public function documents() : MorphMany
+//    {
+//        return $this->morphMany(Document::class, 'documentof');
+//    }
 
     public function children(): BelongsToMany
     {
-        return $this->belongsToMany(ChecklistItem::class, 'checklist_items_link', 'parent_id', 'child_id')->withPivot('required');
+        return $this->belongsToMany(
+            ChecklistItem::class,
+            'checklist_items_link',
+            'parent_id',
+            'child_id')->withPivot('required');
     }
 
-    public function parents(): BelongsToMany{
-        return $this->belongsToMany(ChecklistItem::class, 'checklist_items_link', 'child_id', 'parent_id')->withPivot('required');
+    public function parents(): BelongsToMany
+    {
+        return $this->belongsToMany(
+            ChecklistItem::class,
+            'checklist_items_link',
+            'child_id',
+            'parent_id')->withPivot('required');
     }
 
 }
