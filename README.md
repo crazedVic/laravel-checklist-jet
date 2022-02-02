@@ -8,8 +8,8 @@ nested groups of tasks that can be completed etc.
 ### Scenario 1 - Employee Onboarding Checklist
 
 - Job Offer Form (revisions of documents) (r)
-  - Job Offer Acceptance Form Once this is approved the prior step is completed (r)
-    - Employee Contract (pdf signed and scanned) (r)
+  - Job Offer Acceptance Form Once this is approved the prior step is completed (r) (hellosign)
+    - Employee Contract (pdf signed and scanned) (r) (helloSign)
       - Tax Form (pdf form scanned) (contract must be approved)  (r)
         - Bank Payroll Information (tax form must be approved) (r) (marks checklist complete!)
       - Emergency Contact Form (important once employee contract signed) (optional)
