@@ -14,8 +14,6 @@ class FirmChecklist extends Model
     use HasFactory;
 
     protected $guarded = [];
-    protected $with = ["items"];
-
 
     public function items(): HasMany
     {
@@ -32,8 +30,18 @@ class FirmChecklist extends Model
         return $this->morphTo();
     }
 
-    public function process(): BelongsTo
+    public function notes(): MorphMany
     {
-        return $this->belongsTo(Process::class);
+        return $this->morphMany(Note::class, 'noteof');
+    }
+
+    public function activityLogs(): MorphMany
+    {
+        return $this->morphMany(ActivityLog::class, 'activityof')->orderByDesc('id');
+    }
+
+    public function documents(): MorphMany
+    {
+        return $this->morphMany(Document::class, 'documentof');
     }
 }

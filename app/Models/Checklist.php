@@ -4,7 +4,6 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 
@@ -24,8 +23,13 @@ class Checklist extends Model
         return $this->hasMany(FirmChecklist::class);
     }
 
-    public function process(): BelongsTo
+    public function activityLogs(): MorphMany
     {
-        return $this->belongsTo(Process::class);
+        return $this->morphMany(ActivityLog::class, 'activityof')->orderByDesc('id');
+    }
+
+    public function documents(): MorphMany
+    {
+        return $this->morphMany(Document::class, 'documentof');
     }
 }

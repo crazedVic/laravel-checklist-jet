@@ -10,6 +10,12 @@ nested groups of tasks that can be completed etc.
 - Job Offer Form (revisions of documents) (r)
   - Job Offer Acceptance Form Once this is approved the prior step is completed (r) (hellosign)
     - Employee Contract (pdf signed and scanned) (r) (helloSign)
-      - Tax Form (pdf form scanned) (contract must be approved)  (r)
+    - Employee NDA (r)
+      - Tax Form (pdf form scanned) (contract must be approved, NDA Signed)  (r)
         - Bank Payroll Information (tax form must be approved) (r) (marks checklist complete!)
       - Emergency Contact Form (important once employee contract signed) (optional)
+
+#### Thoughts on scenario 1
+- Could we assume that each checklistitem has 4 states:  Waiting | Active(Not Started | In Progress) | Completed
+- Could we assume that each checklistitem has 5 dependencies:  None |  (All) Active | (Any) Active | (All) Completed | (Any) Completed
+- Dependencies are an array, item would check template dependencies

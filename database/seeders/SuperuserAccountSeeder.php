@@ -22,7 +22,7 @@ class SuperuserAccountSeeder extends Seeder
             DB::table('users')->insert([
                 'name' => "SuperAdmin",
                 'email' => 'su@su.com',
-                'password' => Hash::make('passwd99'),
+                'password' => Hash::make('password'),
                 'email_verified_at' => now(),
                 'created_at' => now(),
                 'updated_at' => now(),
@@ -36,7 +36,7 @@ class SuperuserAccountSeeder extends Seeder
             DB::table('users')->insert([
                 'name' => "SuperAdmin",
                 'email' => 'developer@mspcorp.ca',
-                'password' => Hash::make('passwd99'),
+                'password' => Hash::make('password'),
                 'email_verified_at' => now(),
                 'created_at' => now(),
                 'updated_at' => now(),

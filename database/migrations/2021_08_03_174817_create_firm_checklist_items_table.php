@@ -16,11 +16,8 @@ class CreateFirmChecklistItemsTable extends Migration
         Schema::create('firm_checklist_items', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('firm_checklist_id'); //which checklist this item belongs to
-            $table->unsignedBigInteger('firm_parent_item_id')->nullable(); //which checklist item this item belongs to
-           // $table->unsignedBigInteger('checklist_item_id'); //which checklistitem template this is spawned from
+            $table->unsignedBigInteger('checklist_item_id'); //which checklistitem template this is spawned from
             $table->unsignedBigInteger("user_id")->nullable();
-            $table->enum("activated_parent_status",["Completed","Active"])->nullable(); //related to firm_parent_item_id
-            $table->boolean("required")->default(false);
             $table->text("description");
             $table->string("category")->nullable();
             $table->integer("sort_order")->default(0);

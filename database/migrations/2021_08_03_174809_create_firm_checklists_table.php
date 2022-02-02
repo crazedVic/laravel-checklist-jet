@@ -15,8 +15,6 @@ class CreateFirmChecklistsTable extends Migration
     {
         Schema::create('firm_checklists', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger("process_id")->nullable();
-            $table->integer("process_order")->default(0);
             $table->unsignedBigInteger("checklist_id");
             $table->unsignedBigInteger("checklistof_id")->nullable();
             $table->string("checklistof_type")->nullable();

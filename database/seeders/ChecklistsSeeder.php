@@ -14,36 +14,56 @@ class ChecklistsSeeder extends Seeder
      */
     public function run()
     {
-
         DB::table('checklists')->insert([
             'id' => 1,
             'author_id' => 1,
-            'name' => "Checklist 1 No Process",
-            'description' => 'This is the second checklist within the deals process'
+            'name' => "Due Diligence Checklist",
+            'description' => 'Track due diligence requirements for new acquisition.'
         ]);
 
         DB::table('checklists')->insert([
-            'id' => 2,
+            'id' =>2,
             'author_id' => 1,
-            'name' => "Checklist 2 No Process",
-            'description' => 'This is the second checklist within the deals process'
+            'name' => "Monthly Financial Reports",
+            'department' => "Finance",
+            'description' => 'Monthly reports to be uploaded.  <h1>De vacuitate doloris eadem sententia erit.</h1>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duo Reges: constructio interrete. <a href="http://loripsum.net/" target="_blank">Sed quanta sit alias, nunc tantum possitne esse tanta.</a> Laboro autem non sine causa; <i>Nos commodius agimus.</i> <mark>Quo studio Aristophanem putamus aetatem in litteris duxisse?</mark> Beatus sibi videtur esse moriens. </p>
+
+<ul>
+	<li>Stoici autem, quod finem bonorum in una virtute ponunt, similes sunt illorum;</li>
+	<li>Huic mori optimum esse propter desperationem sapientiae, illi propter spem vivere.</li>
+	<li>Quis istum dolorem timet?</li>
+</ul>
+
+
+<h2>Consequatur summas voluptates non modo parvo, sed per me nihilo, si potest;</h2>
+
+<p>Aliud igitur esse censet gaudere, aliud non dolere. Ille enim occurrentia nescio quae comminiscebatur; Quis non odit sordidos, vanos, leves, futtiles? Hunc vos beatum; </p>
+
+<blockquote cite="http://loripsum.net">
+	Praetereo multos, in bis doctum hominem et suavem, Hieronymum, quem iam cur Peripateticum appellem nescio.
+</blockquote>
+
+
+'
         ]);
 
         DB::table('checklists')->insert([
             'id' => 3,
-            'process_id' => 1,
-            'process_order' => 1,
+            'workflow_id' => 1,
+            'workflow_order' => 1,
             'author_id' => 1,
-            'name' => "Checklist 3 - Process 1, Order 1",
+            'name' => "Testing Dependency Checklist within process",
             'description' => 'Figuring out how to handle related parent and child items'
         ]);
 
         DB::table('checklists')->insert([
             'id' => 4,
-            'process_id' => 1,
-            'process_order' => 2,
+            'workflow_id' => 1,
+            'workflow_order' => 2,
             'author_id' => 1,
-            'name' => "Checklist 4 - Process 1, Order 2",
+            'name' => "Testing Dependency Checklist within process",
             'description' => 'This is the second checklist within the deals process'
         ]);
     }

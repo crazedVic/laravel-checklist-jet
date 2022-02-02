@@ -19,7 +19,7 @@ class DatabaseSeeder extends Seeder
         $this->call(DepartmentSeeder::class);
         $this->call(FirmSeeder::class);
         $this->call(TeamUserSeeder::class);
-        $this->call(ProcessSeeder::class);
+        $this->call(WorkflowSeeder::class);
         $this->call(ChecklistsSeeder::class);
         $this->call(ChecklistItemsSeeder::class);
 
