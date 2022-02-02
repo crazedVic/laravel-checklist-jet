@@ -17,7 +17,7 @@ class WorkflowSeeder extends Seeder
         DB::table('workflows')->insert([
             'id' => 1,
             'name' => "Deals",
-            'description' => 'The process surrounding the completion of a deal.'
+            'description' => 'The workflow surrounding the completion of a deal.'
         ]);
     }
 }

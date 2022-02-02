@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//Route::get('/', \App\Http\Livewire\Process::class);
+//Route::get('/', \App\Http\Livewire\Workflow::class);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/',\App\Http\Livewire\Home::class)->name('dashboard');

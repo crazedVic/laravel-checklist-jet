@@ -16,7 +16,7 @@ class ChecklistItemsSeeder extends Seeder
     {
 
         // figuring out checklist item interdependencies
-        // first checklist in process 1
+        // first checklist in worfklow 1
         DB::table('checklist_items')->insert([
             'id' => 1,
             'checklist_id' => 3,
@@ -37,7 +37,7 @@ class ChecklistItemsSeeder extends Seeder
             'checklist_id' => 3,
             'description' => "Task Deals 1-1D"
         ]);
-        // second checklist in process 1
+        // second checklist in workflow 1
         DB::table('checklist_items')->insert([
             'id' => 9,
             'checklist_id' => 4,
