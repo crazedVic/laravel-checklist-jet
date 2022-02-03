@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use Illuminate\Database\Eloquent\Relations\MorphMany;
+use Illuminate\Database\Eloquent\Relations\MorphToMany;
 
 class Checklist extends Model
 {
@@ -13,10 +13,11 @@ class Checklist extends Model
 
     protected $guarded = [];
 
-    public function items(): HasMany
+    public function items(): morphToMany
     {
-        return $this->hasMany(ChecklistItem::class);
+        return $this->morphToMany(ChecklistItem::class, 'item');
     }
+
 
     public function checklists(): HasMany
     {

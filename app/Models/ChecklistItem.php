@@ -4,9 +4,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use Illuminate\Database\Eloquent\Relations\MorphMany;
+use Illuminate\Database\Eloquent\Relations\MorphToMany;
 
 class ChecklistItem extends Model
 {
@@ -14,12 +13,10 @@ class ChecklistItem extends Model
 
     protected $guarded = [];
 
-    /**
-     * @return BelongsTo
-     */
-    public function checklist(): BelongsTo
+    public function checklist(): MorphToMany
     {
-        return $this->belongsTo(Checklist::class);
+        //return $this->belongsTo(Checklist::class);
+        return $this->morphedByMany(Checklist::class, 'item');
     }
 
 
@@ -28,7 +25,12 @@ class ChecklistItem extends Model
 //        return $this->morphMany(Document::class, 'documentof');
 //    }
 
-    public function children(): BelongsToMany
+    public function children(): MorphToMany
+    {
+        return $this->morphToMany(ChecklistItem::class, 'item');
+    }
+
+    public function old_children(): BelongsToMany
     {
         return $this->belongsToMany(
             ChecklistItem::class,
@@ -37,7 +39,7 @@ class ChecklistItem extends Model
             'child_id')->withPivot('required');
     }
 
-    public function parents(): BelongsToMany
+    public function old_parents(): BelongsToMany
     {
         return $this->belongsToMany(
             ChecklistItem::class,

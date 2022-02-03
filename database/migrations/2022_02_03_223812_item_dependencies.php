@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Taskables extends Migration
+class ItemDependencies extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,11 @@ class Taskables extends Migration
      */
     public function up()
     {
-        Schema::create('taskables', function (Blueprint $table) {
+        Schema::create('item_dependencies', function (Blueprint $table) {
             $table->unsignedBigInteger("item_id"); // childId
-            $table->unsignedBigInteger("taskableof_id"); // parentId
-            $table->string("taskableof_item"); // a checklist time belong to a checklist or another checklistitem
-            $table->integer("sort_order")->default(0);
-            $table->string("required")->default("none");
+            $table->unsignedBigInteger("dependencyof_id"); // parentId
+            $table->string("dependencyof_item", 128); // a checklist time belong to a checklist or another checklistitem
+            $table->string("required", 64)->default("None");
         });
     }
 
@@ -29,6 +28,6 @@ class Taskables extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('item_dependencies');
     }
 }

@@ -17,8 +17,12 @@ class CreateChecklistItemsTable extends Migration
             // parent would be determined thorugh checklist items link, and morphable could parent to checklist or task.
             // but for v1 we would use just checklist.
             $table->id();
-            $table->text("description");
-            $table->string("department")->nullable();
+            $table->unsignedBigInteger("itemof_id");
+            $table->string("itemof_item", 128);
+            $table->integer("sort_order")->default(0);
+            $table->string("name", 512);
+            $table->text("description")->nullable();
+            $table->string("department", 255)->nullable();
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP'));
         });
