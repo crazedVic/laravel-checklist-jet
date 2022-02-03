@@ -19,3 +19,7 @@ nested groups of tasks that can be completed etc.
 - Could we assume that each checklistitem has 4 states:  Waiting | Active(Not Started | In Progress) | Completed
 - Could we assume that each checklistitem has 5 dependencies:  None |  (All) Active | (Any) Active | (All) Completed | (Any) Completed
 - Dependencies are an array, item would check template dependencies
+
+
+### Useful links
+https://flaviocopes.com/update-npm-dependencies/

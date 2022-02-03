@@ -2461,22 +2461,22 @@ var autoReplace = function autoReplace() {
 
 /***/ }),
 
-/***/ "./node_modules/@fortawesome/free-solid-svg-icons/faAddressBook.js":
-/*!*************************************************************************!*\
-  !*** ./node_modules/@fortawesome/free-solid-svg-icons/faAddressBook.js ***!
-  \*************************************************************************/
+/***/ "./node_modules/@fortawesome/free-solid-svg-icons/faArrowUp.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/@fortawesome/free-solid-svg-icons/faArrowUp.js ***!
+  \*********************************************************************/
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 var prefix = 'fas';
-var iconName = 'address-book';
+var iconName = 'arrow-up';
 var width = 448;
 var height = 512;
 var ligatures = [];
-var unicode = 'f2b9';
-var svgPathData = 'M436 160c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12h-20V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h320c26.5 0 48-21.5 48-48v-48h20c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12h-20v-64h20c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12h-20v-64h20zm-228-32c35.3 0 64 28.7 64 64s-28.7 64-64 64-64-28.7-64-64 28.7-64 64-64zm112 236.8c0 10.6-10 19.2-22.4 19.2H118.4C106 384 96 375.4 96 364.8v-19.2c0-31.8 30.1-57.6 67.2-57.6h5c12.3 5.1 25.7 8 39.8 8s27.6-2.9 39.8-8h5c37.1 0 67.2 25.8 67.2 57.6v19.2z';
+var unicode = 'f062';
+var svgPathData = 'M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z';
 
 exports.definition = {
   prefix: prefix,
@@ -2489,7 +2489,7 @@ exports.definition = {
     svgPathData
   ]};
 
-exports.faAddressBook = exports.definition;
+exports.faArrowUp = exports.definition;
 exports.prefix = prefix;
 exports.iconName = iconName;
 exports.width = width;
@@ -2500,22 +2500,22 @@ exports.svgPathData = svgPathData;
 
 /***/ }),
 
-/***/ "./node_modules/@fortawesome/free-solid-svg-icons/faAirFreshener.js":
-/*!**************************************************************************!*\
-  !*** ./node_modules/@fortawesome/free-solid-svg-icons/faAirFreshener.js ***!
-  \**************************************************************************/
+/***/ "./node_modules/@fortawesome/free-solid-svg-icons/faCheck.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@fortawesome/free-solid-svg-icons/faCheck.js ***!
+  \*******************************************************************/
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 var prefix = 'fas';
-var iconName = 'air-freshener';
+var iconName = 'check';
 var width = 512;
 var height = 512;
 var ligatures = [];
-var unicode = 'f5d0';
-var svgPathData = 'M224 160H96C43 160 0 203 0 256V480C0 497.625 14.375 512 32 512H288C305.625 512 320 497.625 320 480V256C320 203 277 160 224 160ZM160 416C115.875 416 80 380.125 80 336S115.875 256 160 256S240 291.875 240 336S204.125 416 160 416ZM224 32C224 14.375 209.625 0 192 0H128C110.375 0 96 14.375 96 32V128H224V32ZM381.781 51.578C383 50.969 384 49.359 384 48C384 46.625 383 45.031 381.781 44.422L352 32L339.562 2.219C338.969 1 337.375 0 336 0S333.031 1 332.406 2.219L320 32L290.219 44.422C289 45.031 288 46.625 288 48C288 49.359 289 50.969 290.219 51.578L320 64L332.406 93.781C333.031 95 334.625 96 336 96S338.969 95 339.562 93.781L352 64L381.781 51.578ZM448 64L460.406 93.781C461.031 95 462.625 96 464 96S466.969 95 467.562 93.781L480 64L509.781 51.578C511 50.969 512 49.359 512 48C512 46.625 511 45.031 509.781 44.422L480 32L467.562 2.219C466.969 1 465.375 0 464 0S461.031 1 460.406 2.219L448 32L418.219 44.422C417 45.031 416 46.625 416 48C416 49.359 417 50.969 418.219 51.578L448 64ZM480 224L467.562 194.219C466.969 193 465.375 192 464 192S461.031 193 460.406 194.219L448 224L418.219 236.422C417 237.031 416 238.625 416 240C416 241.359 417 242.969 418.219 243.578L448 256L460.406 285.781C461.031 287 462.625 288 464 288S466.969 287 467.562 285.781L480 256L509.781 243.578C511 242.969 512 241.359 512 240C512 238.625 511 237.031 509.781 236.422L480 224ZM445.781 147.578C447 146.969 448 145.359 448 144C448 142.625 447 141.031 445.781 140.422L416 128L403.562 98.219C402.969 97 401.375 96 400 96S397.031 97 396.406 98.219L384 128L354.219 140.422C353 141.031 352 142.625 352 144C352 145.359 353 146.969 354.219 147.578L384 160L396.406 189.781C397.031 191 398.625 192 400 192S402.969 191 403.562 189.781L416 160L445.781 147.578Z';
+var unicode = 'f00c';
+var svgPathData = 'M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z';
 
 exports.definition = {
   prefix: prefix,
@@ -2528,7 +2528,280 @@ exports.definition = {
     svgPathData
   ]};
 
-exports.faAirFreshener = exports.definition;
+exports.faCheck = exports.definition;
+exports.prefix = prefix;
+exports.iconName = iconName;
+exports.width = width;
+exports.height = height;
+exports.ligatures = ligatures;
+exports.unicode = unicode;
+exports.svgPathData = svgPathData;
+
+/***/ }),
+
+/***/ "./node_modules/@fortawesome/free-solid-svg-icons/faFile.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/@fortawesome/free-solid-svg-icons/faFile.js ***!
+  \******************************************************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var prefix = 'fas';
+var iconName = 'file';
+var width = 384;
+var height = 512;
+var ligatures = [];
+var unicode = 'f15b';
+var svgPathData = 'M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z';
+
+exports.definition = {
+  prefix: prefix,
+  iconName: iconName,
+  icon: [
+    width,
+    height,
+    ligatures,
+    unicode,
+    svgPathData
+  ]};
+
+exports.faFile = exports.definition;
+exports.prefix = prefix;
+exports.iconName = iconName;
+exports.width = width;
+exports.height = height;
+exports.ligatures = ligatures;
+exports.unicode = unicode;
+exports.svgPathData = svgPathData;
+
+/***/ }),
+
+/***/ "./node_modules/@fortawesome/free-solid-svg-icons/faFileUpload.js":
+/*!************************************************************************!*\
+  !*** ./node_modules/@fortawesome/free-solid-svg-icons/faFileUpload.js ***!
+  \************************************************************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var prefix = 'fas';
+var iconName = 'file-upload';
+var width = 384;
+var height = 512;
+var ligatures = [];
+var unicode = 'f574';
+var svgPathData = 'M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm65.18 216.01H224v80c0 8.84-7.16 16-16 16h-32c-8.84 0-16-7.16-16-16v-80H94.82c-14.28 0-21.41-17.29-11.27-27.36l96.42-95.7c6.65-6.61 17.39-6.61 24.04 0l96.42 95.7c10.15 10.07 3.03 27.36-11.25 27.36zM377 105L279.1 7c-4.5-4.5-10.6-7-17-7H256v128h128v-6.1c0-6.3-2.5-12.4-7-16.9z';
+
+exports.definition = {
+  prefix: prefix,
+  iconName: iconName,
+  icon: [
+    width,
+    height,
+    ligatures,
+    unicode,
+    svgPathData
+  ]};
+
+exports.faFileUpload = exports.definition;
+exports.prefix = prefix;
+exports.iconName = iconName;
+exports.width = width;
+exports.height = height;
+exports.ligatures = ligatures;
+exports.unicode = unicode;
+exports.svgPathData = svgPathData;
+
+/***/ }),
+
+/***/ "./node_modules/@fortawesome/free-solid-svg-icons/faFolder.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/@fortawesome/free-solid-svg-icons/faFolder.js ***!
+  \********************************************************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var prefix = 'fas';
+var iconName = 'folder';
+var width = 512;
+var height = 512;
+var ligatures = [];
+var unicode = 'f07b';
+var svgPathData = 'M464 128H272l-64-64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V176c0-26.51-21.49-48-48-48z';
+
+exports.definition = {
+  prefix: prefix,
+  iconName: iconName,
+  icon: [
+    width,
+    height,
+    ligatures,
+    unicode,
+    svgPathData
+  ]};
+
+exports.faFolder = exports.definition;
+exports.prefix = prefix;
+exports.iconName = iconName;
+exports.width = width;
+exports.height = height;
+exports.ligatures = ligatures;
+exports.unicode = unicode;
+exports.svgPathData = svgPathData;
+
+/***/ }),
+
+/***/ "./node_modules/@fortawesome/free-solid-svg-icons/faHourglass.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/@fortawesome/free-solid-svg-icons/faHourglass.js ***!
+  \***********************************************************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var prefix = 'fas';
+var iconName = 'hourglass';
+var width = 384;
+var height = 512;
+var ligatures = [];
+var unicode = 'f254';
+var svgPathData = 'M360 64c13.255 0 24-10.745 24-24V24c0-13.255-10.745-24-24-24H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24 0 90.965 51.016 167.734 120.842 192C75.016 280.266 24 357.035 24 448c-13.255 0-24 10.745-24 24v16c0 13.255 10.745 24 24 24h336c13.255 0 24-10.745 24-24v-16c0-13.255-10.745-24-24-24 0-90.965-51.016-167.734-120.842-192C308.984 231.734 360 154.965 360 64z';
+
+exports.definition = {
+  prefix: prefix,
+  iconName: iconName,
+  icon: [
+    width,
+    height,
+    ligatures,
+    unicode,
+    svgPathData
+  ]};
+
+exports.faHourglass = exports.definition;
+exports.prefix = prefix;
+exports.iconName = iconName;
+exports.width = width;
+exports.height = height;
+exports.ligatures = ligatures;
+exports.unicode = unicode;
+exports.svgPathData = svgPathData;
+
+/***/ }),
+
+/***/ "./node_modules/@fortawesome/free-solid-svg-icons/faList.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/@fortawesome/free-solid-svg-icons/faList.js ***!
+  \******************************************************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var prefix = 'fas';
+var iconName = 'list';
+var width = 512;
+var height = 512;
+var ligatures = [];
+var unicode = 'f03a';
+var svgPathData = 'M80 368H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm0-320H16A16 16 0 0 0 0 64v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16V64a16 16 0 0 0-16-16zm0 160H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm416 176H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-320H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 160H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z';
+
+exports.definition = {
+  prefix: prefix,
+  iconName: iconName,
+  icon: [
+    width,
+    height,
+    ligatures,
+    unicode,
+    svgPathData
+  ]};
+
+exports.faList = exports.definition;
+exports.prefix = prefix;
+exports.iconName = iconName;
+exports.width = width;
+exports.height = height;
+exports.ligatures = ligatures;
+exports.unicode = unicode;
+exports.svgPathData = svgPathData;
+
+/***/ }),
+
+/***/ "./node_modules/@fortawesome/free-solid-svg-icons/faProjectDiagram.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/@fortawesome/free-solid-svg-icons/faProjectDiagram.js ***!
+  \****************************************************************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var prefix = 'fas';
+var iconName = 'project-diagram';
+var width = 640;
+var height = 512;
+var ligatures = [];
+var unicode = 'f542';
+var svgPathData = 'M384 320H256c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h128c17.67 0 32-14.33 32-32V352c0-17.67-14.33-32-32-32zM192 32c0-17.67-14.33-32-32-32H32C14.33 0 0 14.33 0 32v128c0 17.67 14.33 32 32 32h95.72l73.16 128.04C211.98 300.98 232.4 288 256 288h.28L192 175.51V128h224V64H192V32zM608 0H480c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h128c17.67 0 32-14.33 32-32V32c0-17.67-14.33-32-32-32z';
+
+exports.definition = {
+  prefix: prefix,
+  iconName: iconName,
+  icon: [
+    width,
+    height,
+    ligatures,
+    unicode,
+    svgPathData
+  ]};
+
+exports.faProjectDiagram = exports.definition;
+exports.prefix = prefix;
+exports.iconName = iconName;
+exports.width = width;
+exports.height = height;
+exports.ligatures = ligatures;
+exports.unicode = unicode;
+exports.svgPathData = svgPathData;
+
+/***/ }),
+
+/***/ "./node_modules/@fortawesome/free-solid-svg-icons/faTasks.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@fortawesome/free-solid-svg-icons/faTasks.js ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var prefix = 'fas';
+var iconName = 'tasks';
+var width = 512;
+var height = 512;
+var ligatures = [];
+var unicode = 'f0ae';
+var svgPathData = 'M139.61 35.5a12 12 0 0 0-17 0L58.93 98.81l-22.7-22.12a12 12 0 0 0-17 0L3.53 92.41a12 12 0 0 0 0 17l47.59 47.4a12.78 12.78 0 0 0 17.61 0l15.59-15.62L156.52 69a12.09 12.09 0 0 0 .09-17zm0 159.19a12 12 0 0 0-17 0l-63.68 63.72-22.7-22.1a12 12 0 0 0-17 0L3.53 252a12 12 0 0 0 0 17L51 316.5a12.77 12.77 0 0 0 17.6 0l15.7-15.69 72.2-72.22a12 12 0 0 0 .09-16.9zM64 368c-26.49 0-48.59 21.5-48.59 48S37.53 464 64 464a48 48 0 0 0 0-96zm432 16H208a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h288a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-320H208a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h288a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 160H208a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h288a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z';
+
+exports.definition = {
+  prefix: prefix,
+  iconName: iconName,
+  icon: [
+    width,
+    height,
+    ligatures,
+    unicode,
+    svgPathData
+  ]};
+
+exports.faTasks = exports.definition;
 exports.prefix = prefix;
 exports.iconName = iconName;
 exports.width = width;
@@ -8115,20 +8388,34 @@ module.exports = {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @fortawesome/fontawesome-svg-core */ "./node_modules/@fortawesome/fontawesome-svg-core/index.es.js");
-/* harmony import */ var _fortawesome_free_solid_svg_icons_faAirFreshener__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons/faAirFreshener */ "./node_modules/@fortawesome/free-solid-svg-icons/faAirFreshener.js");
-/* harmony import */ var _fortawesome_free_solid_svg_icons_faAddressBook__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons/faAddressBook */ "./node_modules/@fortawesome/free-solid-svg-icons/faAddressBook.js");
-/* harmony import */ var alpinejs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! alpinejs */ "./node_modules/alpinejs/dist/module.esm.js");
+/* harmony import */ var _fortawesome_free_solid_svg_icons_faFolder__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons/faFolder */ "./node_modules/@fortawesome/free-solid-svg-icons/faFolder.js");
+/* harmony import */ var _fortawesome_free_solid_svg_icons_faProjectDiagram__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons/faProjectDiagram */ "./node_modules/@fortawesome/free-solid-svg-icons/faProjectDiagram.js");
+/* harmony import */ var _fortawesome_free_solid_svg_icons_faArrowUp__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons/faArrowUp */ "./node_modules/@fortawesome/free-solid-svg-icons/faArrowUp.js");
+/* harmony import */ var _fortawesome_free_solid_svg_icons_faFile__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons/faFile */ "./node_modules/@fortawesome/free-solid-svg-icons/faFile.js");
+/* harmony import */ var _fortawesome_free_solid_svg_icons_faCheck__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons/faCheck */ "./node_modules/@fortawesome/free-solid-svg-icons/faCheck.js");
+/* harmony import */ var _fortawesome_free_solid_svg_icons_faHourglass__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons/faHourglass */ "./node_modules/@fortawesome/free-solid-svg-icons/faHourglass.js");
+/* harmony import */ var _fortawesome_free_solid_svg_icons_faList__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons/faList */ "./node_modules/@fortawesome/free-solid-svg-icons/faList.js");
+/* harmony import */ var _fortawesome_free_solid_svg_icons_faTasks__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons/faTasks */ "./node_modules/@fortawesome/free-solid-svg-icons/faTasks.js");
+/* harmony import */ var _fortawesome_free_solid_svg_icons_faFileUpload__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons/faFileUpload */ "./node_modules/@fortawesome/free-solid-svg-icons/faFileUpload.js");
+/* harmony import */ var alpinejs__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! alpinejs */ "./node_modules/alpinejs/dist/module.esm.js");
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js"); //https://fontawesome.com/v5.15/how-to-use/on-the-web/advanced/svg-javascript-core
 
 
 
 
 
-_fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_0__.library.add(_fortawesome_free_solid_svg_icons_faAddressBook__WEBPACK_IMPORTED_MODULE_1__.faAddressBook, _fortawesome_free_solid_svg_icons_faAirFreshener__WEBPACK_IMPORTED_MODULE_2__.faAirFreshener);
+
+
+
+
+
+
+
+_fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_0__.library.add(_fortawesome_free_solid_svg_icons_faFolder__WEBPACK_IMPORTED_MODULE_1__.faFolder, _fortawesome_free_solid_svg_icons_faProjectDiagram__WEBPACK_IMPORTED_MODULE_2__.faProjectDiagram, _fortawesome_free_solid_svg_icons_faArrowUp__WEBPACK_IMPORTED_MODULE_3__.faArrowUp, _fortawesome_free_solid_svg_icons_faFile__WEBPACK_IMPORTED_MODULE_4__.faFile, _fortawesome_free_solid_svg_icons_faCheck__WEBPACK_IMPORTED_MODULE_5__.faCheck, _fortawesome_free_solid_svg_icons_faHourglass__WEBPACK_IMPORTED_MODULE_6__.faHourglass, _fortawesome_free_solid_svg_icons_faList__WEBPACK_IMPORTED_MODULE_7__.faList, _fortawesome_free_solid_svg_icons_faTasks__WEBPACK_IMPORTED_MODULE_8__.faTasks, _fortawesome_free_solid_svg_icons_faFileUpload__WEBPACK_IMPORTED_MODULE_9__.faFileUpload);
 _fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_0__.dom.watch();
 
-window.Alpine = alpinejs__WEBPACK_IMPORTED_MODULE_3__["default"];
-alpinejs__WEBPACK_IMPORTED_MODULE_3__["default"].start();
+window.Alpine = alpinejs__WEBPACK_IMPORTED_MODULE_10__["default"];
+alpinejs__WEBPACK_IMPORTED_MODULE_10__["default"].start();
 
 /***/ }),
 
