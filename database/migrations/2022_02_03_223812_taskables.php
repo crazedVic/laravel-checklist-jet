@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateChecklistItemsLinkTable extends Migration
+class Taskables extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,10 @@ class CreateChecklistItemsLinkTable extends Migration
      */
     public function up()
     {
-        Schema::create('checklist_items_link', function (Blueprint $table) {
-            $table->id();
-            $table->unsignedBigInteger("parent_id"); // query by this to get list of items that are enabled upon completion
-            $table->unsignedBigInteger("child_id"); // query by this to find all the parent items that need to be completed
+        Schema::create('taskables', function (Blueprint $table) {
+            $table->unsignedBigInteger("item_id"); // childId
+            $table->unsignedBigInteger("taskableof_id"); // parentId
+            $table->string("taskableof_item"); // a checklist time belong to a checklist or another checklistitem
             $table->integer("sort_order")->default(0);
             $table->string("required")->default("none");
         });
@@ -29,6 +29,6 @@ class CreateChecklistItemsLinkTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('checklist_items_link');
+        //
     }
 }
