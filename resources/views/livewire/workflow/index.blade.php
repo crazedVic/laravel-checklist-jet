@@ -9,13 +9,15 @@
                         <button wire:click="$emit('poop',{{$checklist}})">{{$checklist->name}}</button>
                         @foreach($checklist->items as $item)
                             <div class="text-gray-700 ml-3">{{$item->name}}
+                                @if($item->taskDependencies->first())<br>Depends on Tasks:@endif
                                 @foreach($item->taskDependencies as $taskDependency)
                                     <div
-                                        class="text-blue-500 ml-3">{{$taskDependency->id}} {{$taskDependency->pivot->required}}</div>
+                                        class="text-blue-500 ml-3">{{$taskDependency->id}} {{$taskDependency->name}} {{$taskDependency->pivot->required}}</div>
                                 @endforeach
+                                @if($item->checklistDependencies->first())<br>Depends on Checklists:@endif
                                 @foreach($item->checklistDependencies as $clDependency)
                                     <div
-                                        class="text-green-500 ml-3">{{$clDependency->id}} {{$clDependency->pivot->required}}</div>
+                                        class="text-green-500 ml-3">{{$clDependency->id}}  {{$clDependency->name}} {{$clDependency->pivot->required}}</div>
                                 @endforeach
                             </div>
                         @endforeach
