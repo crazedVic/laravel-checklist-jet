@@ -17,7 +17,7 @@ class ItemDependencies extends Migration
             $table->unsignedBigInteger("item_id"); // childId
             $table->unsignedBigInteger("dependencyof_id"); // parentId
             $table->string("dependencyof_type", 128); // a checklist time belong to a checklist or another checklistitem
-            $table->string("required", 64)->default("None");
+            $table->string("required", 64); // 'Submitted', 'Approved'
         });
     }
 

@@ -1,14 +1,19 @@
 <ul class="w-3/4 mx-auto text-black mt-5">
     @foreach($workflows as $workflow)
-        <li class="font-bold">{{ $workflow->name }}
+            <div class="align-text-bottom text-xl"><i style="font-size: 1.4rem;"
+                                                      class="fas fa-project-diagram text-blue-600 mr-2"></i>
+                {{ $workflow->name }}</div>
             {{--           <button wire:click="generateWorkflow({{$workflow}})" class="p-1 m-1 text-white bg-indigo-500">--}}
             {{--               Generate Workflow</button></li>--}}
             <ol class="ml-5">
                 @foreach($workflow->checklists as $checklist)
                     <li>
-                        <button wire:click="$emit('poop',{{$checklist}})">{{$checklist->name}}</button>
+                        <div class="text-xl pl-6"><i style="font-size: 1.4rem;" class="fas fa-list text-yellow-600 mr-2"></i>
+                            <button wire:click="$emit('poop',{{$checklist}})">{{$checklist->name}}</button></div>
                         @foreach($checklist->items as $item)
-                            <div class="text-gray-700 ml-7">{{$item->name}}
+                            <div class="text-xl pl-20 text-gray-800"><i style="font-size: 1.4rem;"
+                                                                         class="fas fa-file-upload text-blue-600 mr-2"></i>
+                                {{$item->name}}</div>
                                 <div class="ml-5">
                                     @if($item->taskDependencies->first())Depends on Tasks:@endif
                                     @foreach($item->taskDependencies as $taskDependency)
@@ -21,7 +26,7 @@
                                             class="text-green-500 ml-2">{{$clDependency->id}}  {{$clDependency->name}} with status of {{$clDependency->pivot->required}}</div>
                                     @endforeach
                                 </div>
-                            </div>
+
                         @endforeach
                     </li>
                 @endforeach
