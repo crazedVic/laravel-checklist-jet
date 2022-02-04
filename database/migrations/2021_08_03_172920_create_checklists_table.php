@@ -18,8 +18,7 @@ class CreateChecklistsTable extends Migration
             $table->unsignedBigInteger("workflow_id")->nullable();
             $table->integer("sort_order")->default(0);
             $table->unsignedBigInteger('author_id');
-            $table->unsignedBigInteger('prerequisite_id')->nullable();// either no dependency, or depends on another task
-            $table->unsignedBigInteger('parent_id')->nullable(); //or is the child of a task.
+            $table->unsignedBigInteger('prereq_checklist_id')->nullable();// either no dependency, or depends on another task
             $table->string("name");
             $table->text("description")->nullable();
             $table->string("department")->nullable();
