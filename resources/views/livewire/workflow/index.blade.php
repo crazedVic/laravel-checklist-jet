@@ -2,18 +2,20 @@
     @foreach($workflows as $workflow)
             <div class="align-text-bottom text-xl"><i style="font-size: 1.4rem;"
                                                       class="fas fa-project-diagram text-blue-600 mr-2"></i>
-                {{ $workflow->name }}</div>
+                {{ $workflow->name }} <a class="ml-1 text-sm underline text-blue-700" href="#">Add Checklist</a></div>
             {{--           <button wire:click="generateWorkflow({{$workflow}})" class="p-1 m-1 text-white bg-indigo-500">--}}
             {{--               Generate Workflow</button></li>--}}
             <ol class="ml-5">
                 @foreach($workflow->checklists as $checklist)
                     <li>
                         <div class="text-xl pl-6"><i style="font-size: 1.4rem;" class="fas fa-list text-yellow-600 mr-2"></i>
-                            <button wire:click="$emit('poop',{{$checklist}})">{{$checklist->name}}</button></div>
+                            <button wire:click="$emit('poop',{{$checklist}})">{{$checklist->name}}</button><a class="ml-1 text-sm underline text-blue-700" href="#">Add Task</a></div>
                         @foreach($checklist->items as $item)
                             <div class="text-xl pl-20 text-gray-800"><i style="font-size: 1.4rem;"
                                                                          class="fas fa-file-upload text-blue-600 mr-2"></i>
-                                {{$item->name}}</div>
+                                {{$item->name}}<i style="font-size: 1rem;"
+                                                  class="fas fa-pencil-alt text-blue-400 ml-1"></i><i style="font-size: 1rem;"
+                                                  class="fas fa-trash text-red-400 ml-1"></i></div>
                                 <div class="ml-5">
                                     @if($item->taskDependencies->first())Depends on Tasks:@endif
                                     @foreach($item->taskDependencies as $taskDependency)

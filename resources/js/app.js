@@ -12,8 +12,10 @@ import { faHourglass} from "@fortawesome/free-solid-svg-icons/faHourglass";
 import { faList} from "@fortawesome/free-solid-svg-icons/faList";
 import { faTasks} from "@fortawesome/free-solid-svg-icons/faTasks";
 import { faFileUpload} from "@fortawesome/free-solid-svg-icons/faFileUpload";
+import { faTrash } from "@fortawesome/free-solid-svg-icons/faTrash";
+import { faPencilAlt } from "@fortawesome/free-solid-svg-icons/faPencilAlt";
 
-library.add(faFolder, faProjectDiagram, faArrowUp, faFile, faCheck, faHourglass, faList, faTasks, faFileUpload)
+library.add(faFolder, faProjectDiagram, faArrowUp, faFile, faCheck, faHourglass, faList, faTasks, faFileUpload, faTrash, faPencilAlt)
 
 dom.watch()
 
