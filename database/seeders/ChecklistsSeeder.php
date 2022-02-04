@@ -16,15 +16,19 @@ class ChecklistsSeeder extends Seeder
     {
         DB::table('checklists')->insert([
             'id' => 1,
+            'workflow_id' => 1,
+            'workflow_order' => 1,
             'author_id' => 1,
-            'name' => "Due Diligence Checklist",
+            'name' => "Organization",
             'description' => 'Track due diligence requirements for new acquisition.'
         ]);
 
         DB::table('checklists')->insert([
             'id' =>2,
+            'workflow_id' => 1,
+            'workflow_order' => 2,
             'author_id' => 1,
-            'name' => "Monthly Financial Reports",
+            'name' => "Financial Items",
             'department' => "Finance",
             'description' => 'Monthly reports to be uploaded.  <h1>De vacuitate doloris eadem sententia erit.</h1>
 
@@ -52,18 +56,18 @@ class ChecklistsSeeder extends Seeder
         DB::table('checklists')->insert([
             'id' => 3,
             'workflow_id' => 1,
-            'workflow_order' => 1,
+            'workflow_order' => 3,
             'author_id' => 1,
-            'name' => "Testing Dependency Checklist within process",
+            'name' => "Physical Assets",
             'description' => 'Figuring out how to handle related parent and child items'
         ]);
 
         DB::table('checklists')->insert([
             'id' => 4,
             'workflow_id' => 1,
-            'workflow_order' => 2,
+            'workflow_order' => 4,
             'author_id' => 1,
-            'name' => "Testing Dependency Checklist within process",
+            'name' => "Real Estate",
             'description' => 'This is the second checklist within the deals process'
         ]);
     }
