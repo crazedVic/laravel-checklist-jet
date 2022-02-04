@@ -21,433 +21,391 @@ class ChecklistItemsSeeder extends Seeder
         // first checklist in worfklow 1
         DB::table('checklist_items')->insert([
             'id' => $item_id,
-            'itemof_id' => 3,
+            'itemof_id' => 1,
             'itemof_type' => "App\\Models\\Checklist",
             'sort_order' => $i++,
-            'name' => "Task Deals 1-1A"
+            'name' => "Articles of Incorporation"
         ]);
 
         $item_id ++;
         DB::table('checklist_items')->insert([
             'id' => $item_id,
-            'itemof_id' => 3,
+            'itemof_id' => 1,
             'itemof_type' => "App\\Models\\Checklist",
             'sort_order' => $i++,
-            'name' => "Task Deals 1-1B"
+            'name' => "Company Bylaws"
         ]);
 
         $item_id ++;
         DB::table('checklist_items')->insert([
             'id' => $item_id,
-            'itemof_id' => 3,
+            'itemof_id' =>1,
             'itemof_type' => "App\\Models\\Checklist",
             'sort_order' => $i++,
-            'name' => "Task Deals 1-1C"
+            'name' => "Organization Charts"
         ]);
 
         $item_id ++;
         DB::table('checklist_items')->insert([
             'id' => $item_id,
-            'itemof_id' => 3,
+            'itemof_id' => 1,
             'itemof_type' => "App\\Models\\Checklist",
             'sort_order' => $i++,
-            'name' => "Task Deals 1-1D"
+            'name' => "Capital Structure"
         ]);
 
         $item_id ++;
         // second checklist in workflow 1
         DB::table('checklist_items')->insert([
             'id' => $item_id,
-            'itemof_id' => 4,
+            'itemof_id' => 1,
             'itemof_type' => "App\\Models\\Checklist",
             'sort_order' => $i++,
-            'name' => "Task Deals 2-1A"
+            'name' => "Equity Positions"
         ]);
 
         $item_id++;
         DB::table('checklist_items')->insert([
             'id' => $item_id,
-            'itemof_id' => 4,
+            'itemof_id' => 1,
             'itemof_type' => "App\\Models\\Checklist",
             'sort_order' => $i++,
-            'name' => "Task Deals 2-1B"
+            'name' => "Option Holders"
         ]);
 
         $item_id++;
         DB::table('checklist_items')->insert([
             'id' => $item_id,
-            'itemof_id' => 4,
+            'itemof_id' => 1,
             'itemof_type' => "App\\Models\\Checklist",
             'sort_order' => $i++,
-            'name' => "Task Deals 2-1C"
+            'name' => "Warrant Holders"
         ]);
 
         $item_id++;
         DB::table('checklist_items')->insert([
             'id' => $item_id,
-            'itemof_id' => 4,
+            'itemof_id' => 1,
             'itemof_type' => "App\\Models\\Checklist",
             'sort_order' => $i++,
-            'name' => "Task Deals 2-1D"
+            'name' => "Voting Trusts"
         ]);
 
-        /*
-        1A, 1B, 1C, 1D must be completed before 2A can be enabled.
-         */
+        $item_id++;
+        DB::table('checklist_items')->insert([
+            'id' => $item_id,
+            'itemof_id' => 1,
+            'itemof_type' => "App\\Models\\Checklist",
+            'sort_order' => $i++,
+            'name' => "Other financial agreements"
+        ]);
+
+        $item_id++;
+        DB::table('checklist_items')->insert([
+            'id' => $item_id,
+            'itemof_id' => 1,
+            'itemof_type' => "App\\Models\\Checklist",
+            'sort_order' => $i++,
+            'name' => "Certificate of Good Standing from Province in which company is incorporated"
+        ]);
+
+        $item_id++;
+        DB::table('checklist_items')->insert([
+            'id' => $item_id,
+            'itemof_id' => 1,
+            'itemof_type' => "App\\Models\\Checklist",
+            'sort_order' => $i++,
+            'name' => "List of regions in which the company is authorized to do business"
+        ]);
+
+        $item_id++;
+        DB::table('checklist_items')->insert([
+            'id' => $item_id,
+            'itemof_id' => 1,
+            'itemof_type' => "App\\Models\\Checklist",
+            'sort_order' => $i++,
+            'name' => "List of regions in which the company has employees, contract relationships, leases facilities, or transacts business"
+        ]);
+
+        $item_id++;
+        DB::table('checklist_items')->insert([
+            'id' => $item_id,
+            'itemof_id' => 1,
+            'itemof_type' => "App\\Models\\Checklist",
+            'sort_order' => $i++,
+            'name' => "List of any names (and documentation) under which the company may operate"
+        ]);
+
+        $item_id++;
+        DB::table('checklist_items')->insert([
+            'id' => $item_id,
+            'itemof_id' => 2,
+            'itemof_type' => "App\\Models\\Checklist",
+            'sort_order' => $i++,
+            'name' => "Financial Provincements for previous three years"
+        ]);
+
+        $item_id++;
+        DB::table('checklist_items')->insert([
+            'id' => $item_id,
+            'itemof_id' => 2,
+            'itemof_type' => "App\\Models\\Checklist",
+            'sort_order' => $i++,
+            'name' => "Company/Auditor correspondence from previous three years"
+        ]);
+
+        $item_id++;
+        DB::table('checklist_items')->insert([
+            'id' => $item_id,
+            'itemof_id' => 2,
+            'itemof_type' => "App\\Models\\Checklist",
+            'sort_order' => $i++,
+            'name' => "Credit report"
+        ]);
+
+        $item_id++;
+        DB::table('checklist_items')->insert([
+            'id' => $item_id,
+            'itemof_id' => 2,
+            'itemof_type' => "App\\Models\\Checklist",
+            'sort_order' => $i++,
+            'name' => "Capital budget"
+        ]);
+
+        $item_id++;
+        DB::table('checklist_items')->insert([
+            'id' => $item_id,
+            'itemof_id' => 2,
+            'itemof_type' => "App\\Models\\Checklist",
+            'sort_order' => $i++,
+            'name' => "Strategic planning documents"
+        ]);
+
+        $item_id++;
+        DB::table('checklist_items')->insert([
+            'id' => $item_id,
+            'itemof_id' => 2,
+            'itemof_type' => "App\\Models\\Checklist",
+            'sort_order' => $i++,
+            'name' => "Financial schedules"
+        ]);
+
+        $item_id++;
+        DB::table('checklist_items')->insert([
+            'id' => $item_id,
+            'itemof_id' => 2,
+            'itemof_type' => "App\\Models\\Checklist",
+            'sort_order' => $i++,
+            'name' => "Contingent liabilities"
+        ]);
+
+        $item_id++;
+        DB::table('checklist_items')->insert([
+            'id' => $item_id,
+            'itemof_id' => 2,
+            'itemof_type' => "App\\Models\\Checklist",
+            'sort_order' => $i++,
+            'name' => "Indebtedness"
+        ]);
+
+        $item_id++;
+        DB::table('checklist_items')->insert([
+            'id' => $item_id,
+            'itemof_id' => 2,
+            'itemof_type' => "App\\Models\\Checklist",
+            'sort_order' => $i++,
+            'name' => "Inventory"
+        ]);
+
+        $item_id++;
+        DB::table('checklist_items')->insert([
+            'id' => $item_id,
+            'itemof_id' => 2,
+            'itemof_type' => "App\\Models\\Checklist",
+            'sort_order' => $i++,
+            'name' => "Accounts receivable"
+        ]);
+
+        $item_id++;
+        DB::table('checklist_items')->insert([
+            'id' => $item_id,
+            'itemof_id' => 2,
+            'itemof_type' => "App\\Models\\Checklist",
+            'sort_order' => $i++,
+            'name' => "Accounts payable"
+        ]);
+
+        $item_id++;
+        DB::table('checklist_items')->insert([
+            'id' => $item_id,
+            'itemof_id' => 2,
+            'itemof_type' => "App\\Models\\Checklist",
+            'sort_order' => $i++,
+            'name' => "Depreciation and amortization procedures and accounting methods in previous three years"
+        ]);
+
+        $item_id++;
+        DB::table('checklist_items')->insert([
+            'id' => $item_id,
+            'itemof_id' => 2,
+            'itemof_type' => "App\\Models\\Checklist",
+            'sort_order' => $i++,
+            'name' => "Financial model containing revenue, fixed and variable expenses, and gross margins"
+        ]);
+
+        $item_id++;
+        DB::table('checklist_items')->insert([
+            'id' => $item_id,
+            'itemof_id' => 2,
+            'itemof_type' => "App\\Models\\Checklist",
+            'sort_order' => $i++,
+            'name' => "Analysis of internal control procedures"
+        ]);
+
         $item_id++;
         DB::table('checklist_items')->insert([
             'id' => $item_id,
             'itemof_id' => 3,
             'itemof_type' => "App\\Models\\Checklist",
             'sort_order' => $i++,
-            'name' => "Task 2A"
+            'name' => "Listing of fixed assets and their respective locations"
         ]);
+
+        $item_id++;
+        DB::table('checklist_items')->insert([
+            'id' => $item_id,
+            'itemof_id' => 3,
+            'itemof_type' => "App\\Models\\Checklist",
+            'sort_order' => $i++,
+            'name' => "Equipment leases"
+        ]);
+
+        $item_id++;
+        DB::table('checklist_items')->insert([
+            'id' => $item_id,
+            'itemof_id' => 3,
+            'itemof_type' => "App\\Models\\Checklist",
+            'sort_order' => $i++,
+            'name' => "Transactions relating to major capital equipment in previous three years"
+        ]);
+
+        $item_id++;
+        DB::table('checklist_items')->insert([
+            'id' => $item_id,
+            'itemof_id' => 4,
+            'itemof_type' => "App\\Models\\Checklist",
+            'sort_order' => $i++,
+            'name' => "Detailed listing of business locations"
+        ]);
+
+        $item_id++;
+        DB::table('checklist_items')->insert([
+            'id' => $item_id,
+            'itemof_id' => 4,
+            'itemof_type' => "App\\Models\\Checklist",
+            'sort_order' => $i++,
+            'name' => "Copies of any special location leases"
+        ]);
+
+        $item_id++;
+        DB::table('checklist_items')->insert([
+            'id' => $item_id,
+            'itemof_id' => 4,
+            'itemof_type' => "App\\Models\\Checklist",
+            'sort_order' => $i++,
+            'name' => "Real Estate Leases"
+        ]);
+
+        $item_id++;
+        DB::table('checklist_items')->insert([
+            'id' => $item_id,
+            'itemof_id' => 4,
+            'itemof_type' => "App\\Models\\Checklist",
+            'sort_order' => $i++,
+            'name' => "Mortgages"
+        ]);
+
+        $item_id++;
+        DB::table('checklist_items')->insert([
+            'id' => $item_id,
+            'itemof_id' => 4,
+            'itemof_type' => "App\\Models\\Checklist",
+            'sort_order' => $i++,
+            'name' => "Data Center Leases"
+        ]);
+
+        $item_id++;
+        DB::table('checklist_items')->insert([
+            'id' => $item_id,
+            'itemof_id' => 4,
+            'itemof_type' => "App\\Models\\Checklist",
+            'sort_order' => $i++,
+            'name' => "Titles"
+        ]);
+
+        $item_id++;
+        DB::table('checklist_items')->insert([
+            'id' => $item_id,
+            'itemof_id' => 4,
+            'itemof_type' => "App\\Models\\Checklist",
+            'sort_order' => $i++,
+            'name' => "Surveys"
+        ]);
+
+        $item_id++;
+        DB::table('checklist_items')->insert([
+            'id' => $item_id,
+            'itemof_id' => 4,
+            'itemof_type' => "App\\Models\\Checklist",
+            'sort_order' => $i++,
+            'name' => "Zoning approvals"
+        ]);
+
+        $item_id++;
+        DB::table('checklist_items')->insert([
+            'id' => $item_id,
+            'itemof_id' => 4,
+            'itemof_type' => "App\\Models\\Checklist",
+            'sort_order' => $i++,
+            'name' => "Variances"
+        ]);
+
+        $item_id++;
+        DB::table('checklist_items')->insert([
+            'id' => $item_id,
+            'itemof_id' => 4,
+            'itemof_type' => "App\\Models\\Checklist",
+            'sort_order' => $i++,
+            'name' => "Use permits"
+        ]);
+
 
         /* dependencies */
-        DB::table('item_dependencies')->insert([
-            'dependencyof_id' => 1,
-            'dependencyof_type' => "App\\Models\\ChecklistItem",
-            'item_id' => $item_id,
-            'required' => 'Submitted'
-        ]);
-        DB::table('item_dependencies')->insert([
-            'dependencyof_id' => 2,
-            'dependencyof_type' => "App\\Models\\ChecklistItem",
-            'item_id' => $item_id,
-            'required' => 'Submitted'
-        ]);
-        DB::table('item_dependencies')->insert([
-            'dependencyof_id' => 3,
-            'dependencyof_type' => "App\\Models\\ChecklistItem",
-            'item_id' => $item_id,
-            'required' => 'Approved'
-        ]);
-        DB::table('item_dependencies')->insert([
-            'dependencyof_id' => 4,
-            'dependencyof_type' => "App\\Models\\ChecklistItem",
-            'item_id' => $item_id,
-            'required' => 'Submitted'
-        ]);
+//        DB::table('item_dependencies')->insert([
+//            'dependencyof_id' => 1,
+//            'dependencyof_type' => "App\\Models\\ChecklistItem",
+//            'item_id' => $item_id,
+//            'required' => 'Submitted'
+//        ]);
+//        DB::table('item_dependencies')->insert([
+//            'dependencyof_id' => 2,
+//            'dependencyof_type' => "App\\Models\\ChecklistItem",
+//            'item_id' => $item_id,
+//            'required' => 'Submitted'
+//        ]);
+//        DB::table('item_dependencies')->insert([
+//            'dependencyof_id' => 3,
+//            'dependencyof_type' => "App\\Models\\ChecklistItem",
+//            'item_id' => $item_id,
+//            'required' => 'Approved'
+//        ]);
+//        DB::table('item_dependencies')->insert([
+//            'dependencyof_id' => 4,
+//            'dependencyof_type' => "App\\Models\\ChecklistItem",
+//            'item_id' => $item_id,
+//            'required' => 'Submitted'
+//        ]);
 
-        $item_id++;
-        /* items depending on completion of 2A */
-        DB::table('checklist_items')->insert([
-            'id' => $item_id,
-            'itemof_id' => 3,
-            'itemof_type' => "App\\Models\\Checklist",
-            'sort_order' => $i++,
-            'name' => "Task 3A"
-        ]);
-        DB::table('item_dependencies')->insert([
-            'dependencyof_id' => 5,
-            'dependencyof_type' => "App\\Models\\ChecklistItem",
-            'item_id' => $item_id
-        ]);
 
-        $item_id++;
-        DB::table('checklist_items')->insert([
-            'id' => $item_id,
-            'itemof_id' => 3,
-            'itemof_type' => "App\\Models\\Checklist",
-            'sort_order' => $i++,
-            'name' => "Task 3B"
-        ]);
-        DB::table('item_dependencies')->insert([
-            'dependencyof_id' => 5,
-            'dependencyof_type' => "App\\Models\\ChecklistItem",
-            'item_id' => $item_id
-        ]);
-
-        $item_id++;
-        DB::table('checklist_items')->insert([
-            'id' => $item_id,
-            'itemof_id' => 3,
-            'itemof_type' => "App\\Models\\Checklist",
-            'sort_order' => $i++,
-            'name' => "Task 3C"
-        ]);
-        DB::table('item_dependencies')->insert([
-            'dependencyof_id' => 5,
-            'dependencyof_type' => "App\\Models\\ChecklistItem",
-            'item_id' => $item_id
-        ]);
-        DB::table('item_dependencies')->insert([
-            'dependencyof_id' => 5,
-            'dependencyof_type' => "App\\Models\\ChecklistItem",
-            'item_id' => $item_id
-        ]);
-
-        $item_id++;
-        // remaining seeded items
-        DB::table('checklist_items')->insert([
-            'id' => $item_id,
-            'itemof_id' => 1,
-            'itemof_type' => "App\\Models\\Checklist",
-            'sort_order' => $i++,
-            'department' => "Legal",
-            'name' => "Organizational chart of the company indicating the direct and indirect holding of the shares in the share capital of the company.",
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
-        DB::table('item_dependencies')->insert([
-            'dependencyof_id' => 1,
-            'dependencyof_type' => "App\\Models\\Checklist",
-            'item_id' => $item_id,
-        ]);
-        $item_id++;
-        DB::table('checklist_items')->insert([
-            'id' => $item_id,
-            'itemof_id' => 1,
-            'itemof_type' => "App\\Models\\Checklist",
-            'sort_order' => $i++,
-            'department' => "Legal",
-            'name' => "Minute Book (including any written resolution in lieu of meeting) and other corporate records, as well as the statutes and By-Laws of the company, including any amendment to the statutes and By-Laws.",
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
-        $item_id++;
-        DB::table('checklist_items')->insert([
-            'id' => $item_id,
-            'itemof_id' => 1,
-            'itemof_type' => "App\\Models\\Checklist",
-            'sort_order' => $i++,
-            'department' => "Legal",
-            'name' => "Any agreement between the shareholders of the company including any amendment to the latter.",
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
-        $item_id++;
-        DB::table('checklist_items')->insert([
-            'id' => $item_id,
-            'itemof_id' => 1,
-            'itemof_type' => "App\\Models\\Checklist",
-            'sort_order' => $i++,
-            'department' => "Legal",
-            'name' => "List of outstanding options or other rights to purchase shares in the company.",
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
-        $item_id++;
-        DB::table('checklist_items')->insert([
-            'id' => $item_id,
-            'itemof_id' => 1,
-            'itemof_type' => "App\\Models\\Checklist",
-            'sort_order' => $i++,
-            'department' => "Legal",
-            'name' => "List of trade names of the company.",
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
-        $item_id++;
-        DB::table('checklist_items')->insert([
-            'id' => $item_id,
-            'itemof_id' => 1,
-            'itemof_type' => "App\\Models\\Checklist",
-            'sort_order' => $i++,
-            'department' => "Legal",
-            'name' => "List and addresses of the company’s firm places.",
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
-        $item_id++;
-        DB::table('checklist_items')->insert([
-            'id' => $item_id,
-            'itemof_id' => 1,
-            'itemof_type' => "App\\Models\\Checklist",
-            'sort_order' => $i++,
-            'department' => "Legal",
-            'name' => "List of the company’s subsidiaries.",
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
-        $item_id++;
-        DB::table('checklist_items')->insert([
-            'id' => $item_id,
-            'itemof_id' => 1,
-            'itemof_type' => "App\\Models\\Checklist",
-            'sort_order' => $i++,
-            'department' => "Legal",
-            'name' => "Copy of any notice of default received by the company or by one of its subsidiaries from any authority relatively to their respective activities.
-",
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
-        $item_id++;
-        DB::table('checklist_items')->insert([
-            'id' => $item_id,
-            'itemof_id' => 1,
-            'itemof_type' => "App\\Models\\Checklist",
-            'sort_order' => $i++,
-            'department' => "Legal",
-            'name' => "Licenses, authorizations and permits required by public authorities (including municipal) for the operation of the company’ firm.",
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
-        $item_id++;
-        DB::table('checklist_items')->insert([
-            'id' => $item_id,
-            'itemof_id' => 1,
-            'itemof_type' => "App\\Models\\Checklist",
-            'sort_order' => $i++,
-            'department' => "Legal",
-            'name' => "Accreditation certificates, if applicable.
-",
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
-        $item_id++;
-        DB::table('checklist_items')->insert([
-            'id' => $item_id,
-            'itemof_id' => 1,
-            'itemof_type' => "App\\Models\\Checklist",
-            'sort_order' => $i++,
-            'department' => "Legal",
-            'name' => "Firm licences, regulatory approvals or registrations, if applicable.",
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
-        $item_id++;
-        DB::table('checklist_items')->insert([
-            'id' => $item_id,
-            'itemof_id' => 1,
-            'itemof_type' => "App\\Models\\Checklist",
-            'sort_order' => $i++,
-            'department' => "Legal",
-            'name' => "Compliance certificates, if applicable.",
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
-        $item_id++;
-        DB::table('checklist_items')->insert([
-            'id' => $item_id,
-            'itemof_id' => 1,
-            'itemof_type' => "App\\Models\\Checklist",
-            'sort_order' => $i++,
-            'department' => "Legal",
-            'name' => "Documents relating to patents, license agreements, copyrights, trade-marks, industrial designs, processes secrets, know-how and other intellectual property rights owned or used by the company.",
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
-        $item_id++;
-        DB::table('checklist_items')->insert([
-            'id' => $item_id,
-            'itemof_id' => 1,
-            'itemof_type' => "App\\Models\\Checklist",
-            'sort_order' => $i++,
-            'department' => "Legal",
-            'name' => "Description of any action, claim or other proceeding of any nature pertaining to intellectual property owned or used by the company.",
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
-        $item_id++;
-        DB::table('checklist_items')->insert([
-            'id' => $item_id,
-            'itemof_id' => 1,
-            'itemof_type' => "App\\Models\\Checklist",
-            'sort_order' => $i++,
-            'department' => "Legal",
-            'name' => "Written evidence to the effect that, in connection with technology attached to the firm plan, the company owns, free of any lien or other charge, all rights of intellectual property or, where appropriate, an exclusive license.",
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
-        $item_id++;
-        DB::table('checklist_items')->insert([
-            'id' => $item_id,
-            'itemof_id' => 1,
-            'itemof_type' => "App\\Models\\Checklist",
-            'sort_order' => $i++,
-            'department' => "Legal",
-            'name' => "List of the escrow and or other private information that is specific to the companys intellectual properties",
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
-        $item_id++;
-        DB::table('checklist_items')->insert([
-            'id' => $item_id,
-            'itemof_id' => 1,
-            'itemof_type' => "App\\Models\\Checklist",
-            'sort_order' => $i++,
-            'department' => "Legal",
-            'name' => "Agreements with third parties in relation to the realization of the firm plan.",
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
-        $item_id++;
-        DB::table('checklist_items')->insert([
-            'id' => $item_id,
-            'itemof_id' => 1,
-            'itemof_type' => "App\\Models\\Checklist",
-            'sort_order' => $i++,
-            'department' => "Legal",
-            'name' => "Loan agreements, safety, security and other collateral agreements to the financing of the company (including, as appropriate, a list of liens and other charges affecting any property of the company).",
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
-        $item_id++;
-        DB::table('checklist_items')->insert([
-            'id' => $item_id,
-            'itemof_id' => 1,
-            'itemof_type' => "App\\Models\\Checklist",
-            'sort_order' => $i++,
-            'department' => "Legal",
-            'name' => "Contracts with customers or suppliers signed and under negotiation.",
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
-        $item_id++;
-        DB::table('checklist_items')->insert([
-            'id' => $item_id,
-            'itemof_id' => 1,
-            'itemof_type' => "App\\Models\\Checklist",
-            'sort_order' => $i++,
-            'department' => "Legal",
-            'name' => "Non-competition agreements or all other contracts restricting the rights of the company.",
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
-        $item_id++;
-        DB::table('checklist_items')->insert([
-            'id' => $item_id,
-            'itemof_id' => 2,
-            'itemof_type' => "App\\Models\\Checklist",
-            'sort_order' => $i++,
-            'department' => "Finance",
-            'name' => "P&L Statement",
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
-        $item_id++;
-        DB::table('checklist_items')->insert([
-            'id' => $item_id,
-            'itemof_id' => 2,
-            'itemof_type' => "App\\Models\\Checklist",
-            'sort_order' => $i++,
-            'department' => "Finance",
-            'name' => "Income Statement",
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
-        $item_id++;
-        DB::table('checklist_items')->insert([
-            'id' => $item_id,
-            'itemof_id' => 2,
-            'itemof_type' => "App\\Models\\Checklist",
-            'sort_order' => $i++,
-            'department' => "Finance",
-            'name' => "Balance Sheet",
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
-        $item_id++;
-        DB::table('checklist_items')->insert([
-            'id' => $item_id,
-            'itemof_id' => 2,
-            'itemof_type' => "App\\Models\\Checklist",
-            'sort_order' => $i++,
-            'department' => "Finance",
-            'name' => "General Ledger",
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
     }
 }

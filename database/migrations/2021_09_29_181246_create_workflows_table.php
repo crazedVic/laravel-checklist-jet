@@ -17,6 +17,7 @@ class CreateWorkflowsTable extends Migration
             $table->id();
             $table->string("name");
             $table->string("description");
+            $table->string("department")->default("Deals");
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP'));
         });
