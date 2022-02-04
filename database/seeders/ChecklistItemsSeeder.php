@@ -21,7 +21,7 @@ class ChecklistItemsSeeder extends Seeder
         DB::table('checklist_items')->insert([
             'id' => 1,
             'itemof_id' => 3,
-            'itemof_item' => "App\\Models\\Checklist",
+            'itemof_type' => "App\\Models\\Checklist",
             'sort_order' => $i++,
             'name' => "Task Deals 1-1A"
         ]);
@@ -30,7 +30,7 @@ class ChecklistItemsSeeder extends Seeder
         DB::table('checklist_items')->insert([
             'id' => 2,
             'itemof_id' => 3,
-            'itemof_item' => "App\\Models\\Checklist",
+            'itemof_type' => "App\\Models\\Checklist",
             'sort_order' => $i++,
             'name' => "Task Deals 1-1B"
         ]);
@@ -39,7 +39,7 @@ class ChecklistItemsSeeder extends Seeder
         DB::table('checklist_items')->insert([
             'id' => 3,
             'itemof_id' => 3,
-            'itemof_item' => "App\\Models\\Checklist",
+            'itemof_type' => "App\\Models\\Checklist",
             'sort_order' => $i++,
             'name' => "Task Deals 1-1C"
         ]);
@@ -48,7 +48,7 @@ class ChecklistItemsSeeder extends Seeder
         DB::table('checklist_items')->insert([
             'id' => 4,
             'itemof_id' => 3,
-            'itemof_item' => "App\\Models\\Checklist",
+            'itemof_type' => "App\\Models\\Checklist",
             'sort_order' => $i++,
             'name' => "Task Deals 1-1D"
         ]);
@@ -57,7 +57,7 @@ class ChecklistItemsSeeder extends Seeder
         DB::table('checklist_items')->insert([
             'id' => 9,
             'itemof_id' => 4,
-            'itemof_item' => "App\\Models\\Checklist",
+            'itemof_type' => "App\\Models\\Checklist",
             'sort_order' => $i++,
             'name' => "Task Deals 2-1A"
         ]);
@@ -66,7 +66,7 @@ class ChecklistItemsSeeder extends Seeder
         DB::table('checklist_items')->insert([
             'id' => 10,
             'itemof_id' => 4,
-            'itemof_item' => "App\\Models\\Checklist",
+            'itemof_type' => "App\\Models\\Checklist",
             'sort_order' => $i++,
             'name' => "Task Deals 2-1B"
         ]);
@@ -74,7 +74,7 @@ class ChecklistItemsSeeder extends Seeder
         DB::table('checklist_items')->insert([
             'id' => 11,
             'itemof_id' => 4,
-            'itemof_item' => "App\\Models\\Checklist",
+            'itemof_type' => "App\\Models\\Checklist",
             'sort_order' => $i++,
             'name' => "Task Deals 2-1C"
         ]);
@@ -83,7 +83,7 @@ class ChecklistItemsSeeder extends Seeder
         DB::table('checklist_items')->insert([
             'id' => 12,
             'itemof_id' => 4,
-            'itemof_item' => "App\\Models\\Checklist",
+            'itemof_type' => "App\\Models\\Checklist",
             'sort_order' => $i++,
             'name' => "Task Deals 2-1D"
         ]);
@@ -94,7 +94,7 @@ class ChecklistItemsSeeder extends Seeder
         DB::table('checklist_items')->insert([
             'id' => 5,
             'itemof_id' => 3,
-            'itemof_item' => "App\\Models\\Checklist",
+            'itemof_type' => "App\\Models\\Checklist",
             'sort_order' => $i++,
             'name' => "Task 2A"
         ]);
@@ -128,61 +128,54 @@ class ChecklistItemsSeeder extends Seeder
         /* items depending on completion of 2A */
         DB::table('checklist_items')->insert([
             'id' => 6,
+            'itemof_id' => 3,
+            'itemof_type' => "App\\Models\\Checklist",
+            'sort_order' => $i++,
             'name' => "Task 3A"
         ]);
-        DB::table('item_dependencies')->insert([
-            'dependencyof_id' => 3,
-            'dependencyof_item' => "App\\Models\\Checklist",
-            'item_id' => 6,
-            'required' => 'None'
-        ]);
+
 
         DB::table('checklist_items')->insert([
             'id' => 7,
+            'itemof_id' => 3,
+            'itemof_type' => "App\\Models\\Checklist",
+            'sort_order' => $i++,
             'name' => "Task 3B"
         ]);
-        DB::table('item_dependencies')->insert([
-            'dependencyof_id' => 3,
-            'dependencyof_item' => "App\\Models\\Checklist",
-            'item_id' => 7,
-            'required' => 'None'
-        ]);
+
 
         DB::table('checklist_items')->insert([
             'id' => 8,
+            'itemof_id' => 3,
+            'itemof_type' => "App\\Models\\Checklist",
+            'sort_order' => $i++,
             'name' => "Task 3C"
-        ]);
-        DB::table('item_dependencies')->insert([
-            'dependencyof_id' => 3,
-            'dependencyof_item' => "App\\Models\\Checklist",
-            'item_id' => 8,
-            'required' => 'None'
         ]);
 
         /* record the relationship dependencies */
-//        DB::table('item_dependencies')->insert([
-//            'dependencyof_id' => 5,
-//            'dependencyof_item' => "App\\Models\\ChecklistItem",
-//            'item_id' => 6
-//        ]);
-//
-//        DB::table('item_dependencies')->insert([
-//            'dependencyof_id' => 5,
-//            'dependencyof_item' => "App\\Models\\ChecklistItem",
-//            'item_id' => 7
-//        ]);
-//
-//        DB::table('item_dependencies')->insert([
-//            'dependencyof_id' => 5,
-//            'dependencyof_item' => "App\\Models\\ChecklistItem",
-//            'item_id' => 8
-//        ]);
+        DB::table('item_dependencies')->insert([
+            'dependencyof_id' => 5,
+            'dependencyof_item' => "App\\Models\\ChecklistItem",
+            'item_id' => 6
+        ]);
+
+        DB::table('item_dependencies')->insert([
+            'dependencyof_id' => 5,
+            'dependencyof_item' => "App\\Models\\ChecklistItem",
+            'item_id' => 7
+        ]);
+
+        DB::table('item_dependencies')->insert([
+            'dependencyof_id' => 5,
+            'dependencyof_item' => "App\\Models\\ChecklistItem",
+            'item_id' => 8
+        ]);
 
 
         // remaining seeded items
 //        DB::table('checklist_items')->insert([
 //            'checklist_id' => 1,
-//            'deparment' => "Legal",
+//            'department' => "Legal",
 //            'description' => "Organizational chart of the company indicating the direct and indirect holding of the shares in the share capital of the company.",
 //            'created_at' => now(),
 //            'updated_at' => now(),

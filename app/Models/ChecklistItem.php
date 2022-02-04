@@ -13,10 +13,10 @@ class ChecklistItem extends Model
 
     protected $guarded = [];
 
-    public function checklist(): MorphToMany
+    public function itemof(): MorphToMany
     {
         //return $this->belongsTo(Checklist::class);
-        return $this->morphedByMany(Checklist::class, 'item');
+        return $this->morphtTo();
     }
 
 
@@ -24,11 +24,6 @@ class ChecklistItem extends Model
 //    {
 //        return $this->morphMany(Document::class, 'documentof');
 //    }
-
-    public function children(): MorphToMany
-    {
-        return $this->morphToMany(ChecklistItem::class, 'item');
-    }
 
     public function old_children(): BelongsToMany
     {

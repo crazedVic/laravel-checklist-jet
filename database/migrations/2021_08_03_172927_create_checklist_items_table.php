@@ -18,7 +18,7 @@ class CreateChecklistItemsTable extends Migration
             // but for v1 we would use just checklist.
             $table->id();
             $table->unsignedBigInteger("itemof_id");
-            $table->string("itemof_item", 128);
+            $table->string("itemof_type", 128);
             $table->integer("sort_order")->default(0);
             $table->string("name", 512);
             $table->text("description")->nullable();
