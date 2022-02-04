@@ -17,7 +17,7 @@ class Workflow extends Model
 
     public function checklists(): HasMany
     {
-        return $this->hasMany(Checklist::class);
+        return $this->hasMany(Checklist::class)->orderBy('sort_order');
     }
 
 }

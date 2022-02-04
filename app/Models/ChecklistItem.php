@@ -19,6 +19,15 @@ class ChecklistItem extends Model
         return $this->morphtTo();
     }
 
+    public function checklistDependencies(): MorphToMany
+    {
+        return $this->morphedByMany(Checklist::class, 'dependencyof', 'item_dependencies', 'item_id')->withPivot('required');
+    }
+
+    public function taskDependencies(): MorphToMany
+    {
+        return $this->morphedByMany(ChecklistItem::class, 'dependencyof', 'item_dependencies', 'item_id')->withPivot('required');
+    }
 
 //    public function documents() : MorphMany
 //    {

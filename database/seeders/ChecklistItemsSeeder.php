@@ -106,27 +106,27 @@ class ChecklistItemsSeeder extends Seeder
         /* dependencies */
         DB::table('item_dependencies')->insert([
             'dependencyof_id' => 1,
-            'dependencyof_item' => "App\\Models\\ChecklistItem",
+            'dependencyof_type' => "App\\Models\\ChecklistItem",
             'item_id' => $item_id,
-            'required' => 'Completed'
+            'required' => 'Submitted'
         ]);
         DB::table('item_dependencies')->insert([
             'dependencyof_id' => 2,
-            'dependencyof_item' => "App\\Models\\ChecklistItem",
+            'dependencyof_type' => "App\\Models\\ChecklistItem",
             'item_id' => $item_id,
-            'required' => 'Completed'
+            'required' => 'Submitted'
         ]);
         DB::table('item_dependencies')->insert([
             'dependencyof_id' => 3,
-            'dependencyof_item' => "App\\Models\\ChecklistItem",
+            'dependencyof_type' => "App\\Models\\ChecklistItem",
             'item_id' => $item_id,
-            'required' => 'None'
+            'required' => 'Approved'
         ]);
         DB::table('item_dependencies')->insert([
             'dependencyof_id' => 4,
-            'dependencyof_item' => "App\\Models\\ChecklistItem",
+            'dependencyof_type' => "App\\Models\\ChecklistItem",
             'item_id' => $item_id,
-            'required' => 'Completed'
+            'required' => 'Submitted'
         ]);
 
         $item_id++;
@@ -140,7 +140,7 @@ class ChecklistItemsSeeder extends Seeder
         ]);
         DB::table('item_dependencies')->insert([
             'dependencyof_id' => 5,
-            'dependencyof_item' => "App\\Models\\ChecklistItem",
+            'dependencyof_type' => "App\\Models\\ChecklistItem",
             'item_id' => $item_id
         ]);
 
@@ -154,7 +154,7 @@ class ChecklistItemsSeeder extends Seeder
         ]);
         DB::table('item_dependencies')->insert([
             'dependencyof_id' => 5,
-            'dependencyof_item' => "App\\Models\\ChecklistItem",
+            'dependencyof_type' => "App\\Models\\ChecklistItem",
             'item_id' => $item_id
         ]);
 
@@ -168,12 +168,12 @@ class ChecklistItemsSeeder extends Seeder
         ]);
         DB::table('item_dependencies')->insert([
             'dependencyof_id' => 5,
-            'dependencyof_item' => "App\\Models\\ChecklistItem",
+            'dependencyof_type' => "App\\Models\\ChecklistItem",
             'item_id' => $item_id
         ]);
         DB::table('item_dependencies')->insert([
             'dependencyof_id' => 5,
-            'dependencyof_item' => "App\\Models\\ChecklistItem",
+            'dependencyof_type' => "App\\Models\\ChecklistItem",
             'item_id' => $item_id
         ]);
 
@@ -191,7 +191,7 @@ class ChecklistItemsSeeder extends Seeder
         ]);
         DB::table('item_dependencies')->insert([
             'dependencyof_id' => 1,
-            'dependencyof_item' => "App\\Models\\Checklist",
+            'dependencyof_type' => "App\\Models\\Checklist",
             'item_id' => $item_id,
         ]);
         $item_id++;

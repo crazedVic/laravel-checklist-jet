@@ -17,7 +17,7 @@ class ChecklistsSeeder extends Seeder
         DB::table('checklists')->insert([
             'id' => 1,
             'workflow_id' => 1,
-            'workflow_order' => 1,
+            'sort_order' => 1,
             'author_id' => 1,
             'name' => "Organization",
             'description' => 'Track due diligence requirements for new acquisition.'
@@ -26,7 +26,7 @@ class ChecklistsSeeder extends Seeder
         DB::table('checklists')->insert([
             'id' =>2,
             'workflow_id' => 1,
-            'workflow_order' => 2,
+            'sort_order' => 2,
             'author_id' => 1,
             'name' => "Financial Items",
             'department' => "Finance",
@@ -56,7 +56,7 @@ class ChecklistsSeeder extends Seeder
         DB::table('checklists')->insert([
             'id' => 3,
             'workflow_id' => 1,
-            'workflow_order' => 3,
+            'sort_order' => 3,
             'author_id' => 1,
             'name' => "Physical Assets",
             'description' => 'Figuring out how to handle related parent and child items'
@@ -65,7 +65,7 @@ class ChecklistsSeeder extends Seeder
         DB::table('checklists')->insert([
             'id' => 4,
             'workflow_id' => 1,
-            'workflow_order' => 4,
+            'sort_order' => 4,
             'author_id' => 1,
             'name' => "Real Estate",
             'description' => 'This is the second checklist within the deals process'

@@ -14,9 +14,11 @@ class Checklist extends Model
 
     protected $guarded = [];
 
+    protected $with = ["items"];
+
     public function items(): MorphMany
     {
-        return $this->morphMany(ChecklistItem::class, 'itemof');
+        return $this->morphMany(ChecklistItem::class, 'itemof')->orderBy('sort_order');
     }
 
 

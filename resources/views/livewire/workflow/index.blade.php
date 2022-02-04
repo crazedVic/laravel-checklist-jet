@@ -8,8 +8,17 @@
                     <li>
                         <button wire:click="$emit('poop',{{$checklist}})">{{$checklist->name}}</button>
                         @foreach($checklist->items as $item)
-                            <div class="text-gray-700 ml-3">{{$item->description}}</div>
-                            @endforeach
+                            <div class="text-gray-700 ml-3">{{$item->name}}
+                                @foreach($item->taskDependencies as $taskDependency)
+                                    <div
+                                        class="text-blue-500 ml-3">{{$taskDependency->id}} {{$taskDependency->pivot->required}}</div>
+                                @endforeach
+                                @foreach($item->checklistDependencies as $clDependency)
+                                    <div
+                                        class="text-green-500 ml-3">{{$clDependency->id}} {{$clDependency->pivot->required}}</div>
+                                @endforeach
+                            </div>
+                        @endforeach
                     </li>
                 @endforeach
             </ol>

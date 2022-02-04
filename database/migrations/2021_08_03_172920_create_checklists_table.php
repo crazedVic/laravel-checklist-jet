@@ -16,7 +16,7 @@ class CreateChecklistsTable extends Migration
         Schema::create('checklists', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger("workflow_id")->nullable();
-            $table->integer("workflow_order")->default(0);
+            $table->integer("sort_order")->default(0);
             $table->unsignedBigInteger('author_id');
             $table->unsignedBigInteger('prerequisite_id')->nullable();// either no dependency, or depends on another task
             $table->unsignedBigInteger('parent_id')->nullable(); //or is the child of a task.
