@@ -8,9 +8,11 @@ class Modal extends BaseModal
 {
 
     public $name;
+    public $checklist_id;
 
     public $rules=[
-        'name' => 'required|string|max:12'
+        'name' => 'required|string|max:12',
+        'checklist_id'=>'numeric|required'
     ];
 
     public function render()
@@ -19,7 +21,8 @@ class Modal extends BaseModal
     }
 
     public function save(){
-      //  $this->validate();
+        //$this->validate();
+        dd([$this->name, $this->checklist_id]);
         $this->dispatchBrowserEvent('closemodal', ['modal' => 'showTaskModal']);
 
     }
