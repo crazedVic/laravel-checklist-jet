@@ -1,13 +1,14 @@
 <div>
     <div class="text-xl pl-6"><i style="font-size: 1.4rem;" class="fas fa-list text-yellow-600 mr-2"></i>
-        <button wire:click="$emit('poop',{{$checklist}})">{{$checklist->name}}</button>
+        <span class="cursor-pointer " wire:click="$emit('poop',{{$checklist}})">{{$checklist->name}}</span>
         <a class="ml-1 text-sm underline text-blue-700" href="#" @click="showTaskModal = true; taskid = {{$checklist->id}}">Add Task</a></div>
     @foreach($checklist->items as $item)
-        <div class="text-xl pl-20 text-gray-800"><i style="font-size: 1.4rem;"
+        <p class="-indent-8 text-xl pl-20 text-gray-800"><i style="font-size: 1.4rem;"
                                                     class="fas fa-file-upload text-blue-600 mr-2"></i>
             {{$item->name}}<i style="font-size: 1rem;"
                               class="fas fa-pencil-alt text-blue-400 ml-1"></i><i style="font-size: 1rem;"
-                                                                                  class="fas fa-trash text-red-400 ml-1"></i></div>
+                                                                                  class="fas fa-trash text-red-400 ml-1"></i>
+        </p>
         <div class="ml-5">
             @if($item->taskDependencies->first())Depends on Tasks:@endif
             @foreach($item->taskDependencies as $taskDependency)

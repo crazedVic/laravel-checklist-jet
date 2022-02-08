@@ -4,7 +4,7 @@
     @foreach($workflows as $workflow)
             <div class="align-text-bottom text-xl"><i style="font-size: 1.4rem;"
                                                       class="fas fa-project-diagram text-blue-600 mr-2"></i>
-                {{ $workflow->name }} <a class="ml-1 text-sm underline text-blue-700" href="#"
+             {{ $workflow->name }} <a class="ml-1 text-sm underline text-blue-700" href="#"
                                          @click="showChecklistModal = true">Add Checklist</a></div>
             {{--           <button wire:click="generateWorkflow({{$workflow}})" class="p-1 m-1 text-white bg-indigo-500">--}}
             {{--               Generate Workflow</button></li>--}}
