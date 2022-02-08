@@ -2870,6 +2870,15 @@ html {
 .-mt-px {
   margin-top: -1px;
 }
+.mr-1 {
+  margin-right: 0.25rem;
+}
+.ml-20 {
+  margin-left: 5rem;
+}
+.ml-24 {
+  margin-left: 6rem;
+}
 .block {
   display: block;
 }
@@ -3390,6 +3399,15 @@ html {
 .-indent-8 {
   text-indent: -2rem;
 }
+.-indent-2 {
+  text-indent: -0.5rem;
+}
+.-indent-2\.5 {
+  text-indent: -0.625rem;
+}
+.-indent-9 {
+  text-indent: -2.25rem;
+}
 .align-text-bottom {
   vertical-align: text-bottom;
 }
@@ -3549,6 +3567,10 @@ html {
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+.text-orange-600 {
+  --tw-text-opacity: 1;
+  color: rgb(234 88 12 / var(--tw-text-opacity));
 }
 .underline {
   -webkit-text-decoration-line: underline;
@@ -4111,6 +4133,10 @@ html {
 
   .lg\:w-1\/2 {
     width: 50%;
+  }
+
+  .lg\:w-3\/4 {
+    width: 75%;
   }
 
   .lg\:px-8 {
