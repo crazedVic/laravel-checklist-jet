@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Firm;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
@@ -88,6 +89,8 @@ class FirmSeeder extends Seeder
             'updated_at' => now()
         ]);
 
+
+
         //insert company four
         DB::table('firms')->insert([
             'team_id' => 5,
@@ -109,5 +112,7 @@ class FirmSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
+
+        Firm::factory()->count(400)->create();
     }
 }

@@ -1,7 +1,6 @@
 <?php
 
-use App\Http\Livewire\Home;
-use App\Http\Livewire\Workflow\Index;
+use App\Http\Livewire;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,5 +16,9 @@ use Illuminate\Support\Facades\Route;
 
 //Route::get('/', \App\Http\Livewire\Workflow::class);
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/', Home::class)->name('dashboard');
-Route::middleware(['auth:sanctum', 'verified'])->get('/workflows', Index::class)->name('dashboard');
+Route::middleware(['auth:sanctum', 'verified'])
+    ->get('/', Livewire\Home::class)->name('dashboard');
+Route::middleware(['auth:sanctum', 'verified'])
+    ->get('/workflows', Livewire\Workflow\Index::class)->name('dashboard');
+Route::middleware(['auth:sanctum', 'verified'])
+    ->get('/render-fun', Livewire\Firm\Index::class)->name('dashboard');
