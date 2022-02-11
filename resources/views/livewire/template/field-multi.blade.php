@@ -1,3 +1,3 @@
 <div>
-    {{-- The Master doesn't talk, he acts. --}}
+    {{-- All fields will be textarea with 1 row by default --}}
 </div>
